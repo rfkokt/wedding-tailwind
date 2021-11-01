@@ -29,6 +29,7 @@ export default function Invited({
                         <Image src={Bunga} width={512} height={282}/>
                     </div>
                     <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-mono"}>Hello,
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         You're Invited</h1>
                     <br/>
                     <h1 className={"md:text-2xl text-xl font-medium text-white leading-relaxed"}>- Save the date of our
