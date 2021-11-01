@@ -9,18 +9,18 @@ export default function Hero({
     return (
         <>
             <div className={"bg-hero min-h-screen bg-cover bg-bottom"}>
-                <motion.div
-                    initial={{scale: 0}}
-                    animate={{rotate: 0, scale: 1}}
-                    transition={{
-                        type: "tween",
-                        duration: 2,
-                        // ease: "easeOut",
-                        // stiffness: 260,
-                        // damping: 20,
-                        // delay: 1
-                    }}
-                >
+                {/*<motion.div*/}
+                {/*    initial={{scale: 0}}*/}
+                {/*    animate={{rotate: 0, scale: 1}}*/}
+                {/*    transition={{*/}
+                {/*        type: "tween",*/}
+                {/*        duration: 2,*/}
+                {/*        // ease: "easeOut",*/}
+                {/*        // stiffness: 260,*/}
+                {/*        // damping: 20,*/}
+                {/*        // delay: 1*/}
+                {/*    }}*/}
+                {/*>*/}
                     <div className={"text-center opacity-100"}>
                         <div className={"md:py-10 object-left-top"}>
                             <Image src={Bunga} width={512} height={282}/>
@@ -41,7 +41,7 @@ export default function Hero({
                         <p className={"text-white italic pb-10"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>
 
                     </div>
-                </motion.div>
+                {/*</motion.div>*/}
             </div>
         </>
     )
