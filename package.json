@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-spring": "^9.2.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.6",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
   }
 }
