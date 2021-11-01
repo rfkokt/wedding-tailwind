@@ -11,13 +11,13 @@ export default function Pengantin() {
                             alt=""/>
                     </div>
 
-                    <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 font-bold"}>-
+                    <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5"}>-
                         Rifki
                         -</h1>
                     <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-mono"}>Rifki
                         Okta Pratama,S.T</h1>
                     <br/>
-                    <p>
+                    <p className={"text-white"}>
                         Putra Pertama <span className={"font-bold"}>Bpk. Nazwan & Ibu Eri Yanti</span>
                     </p>
                 </div>
@@ -28,13 +28,13 @@ export default function Pengantin() {
                             src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
                             alt=""/>
                     </div>
-                    <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 font-mono font-bold"}>-
+                    <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 "}>-
                         Novia
                         -</h1>
                     <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-mono"}>Novia
                         Trie Rizkiyanti,A.Md.Kes</h1>
                     <br/>
-                    <p>
+                    <p className={"text-white"}>
                         Putri Ketiga<span className={"font-bold"}> Bpk. Abdul Hamid & Ibu Mas`ulah (Almh)
                     </span>
                     </p>

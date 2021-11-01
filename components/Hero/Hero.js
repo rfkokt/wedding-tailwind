@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import Bunga from '../../assets/bunga.png'
 import Timer from "../Timer";
+import MaskTop from "../../assets/mask.png";
 
 export default function Hero({
                                  guest
@@ -42,6 +43,9 @@ export default function Hero({
 
                     </div>
                 {/*</motion.div>*/}
+                <div className={"-mb-2"}>
+                    <Image src={MaskTop}/>
+                </div>
             </div>
         </>
     )

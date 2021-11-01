@@ -4,9 +4,8 @@ import BungaKanan from '../../assets/leaves-right.png'
 import MaskTop from '../../assets/mask.png'
 import MaskBottom from '../../assets/mask_bottom.png'
 import Pengantin from "./Pengantin/Pengantin";
-import BawahMempelai from "./BawahMempelai";
 
-export default function Mempelai() {
+export default function BawahMempelai() {
 
     return (
         <>
@@ -28,9 +27,6 @@ export default function Mempelai() {
                         </p>
                     </div>
                     <Pengantin/>
-                </div>
-                <div className={"-mb-2"}>
-                    <Image src={MaskTop}/>
                 </div>
             </div>
         </>

@@ -2,6 +2,7 @@ import Hero from "../components/Hero/Hero";
 import Mempelai from "../components/Content/Mempelai";
 import {useState} from "react";
 import Invited from "../components/Invited/Invited";
+import BawahMempelai from "../components/Content/BawahMempelai";
 
 export default function Home() {
     const [invited, setInvited] = useState(true)
@@ -19,6 +20,7 @@ export default function Home() {
                 <>
                     <Hero guest={tamu}/>
                     <Mempelai/>
+                    <BawahMempelai/>
                 </>
             }
         </>
