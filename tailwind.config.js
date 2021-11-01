@@ -39,16 +39,29 @@ module.exports = {
                     "800": "#1c1c1c",
                     "900": "#1a1a1a",
                 },
-                "pinkhunt":{
+                "pinkhunt": {
                     "50": "#FCD8D4",
                     "100": "#FDF6F0",
                     "150": "#F8E2CF",
                     "200": "#F5C6AA",
                 },
+                "color-pallete": {
+                    "50": "#1e322e",
+                    "100": "#b9b5bc",
+                    "150": "#0a1719",
+                    "200": "#758a7c",
+                    "250": "#97a5ac",
+                    "300": "#4f745d",
+                    "350": "#8a96a9",
+                    "400": "#365345",
+                    "450": "#48596f",
+                    "500": "#c48410",
+                    "550": "#a45c5c",
+                },
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "ultra-light": `url(/ultra_light1.png)`,
+                "invited": `url(/hero4.jpg)`,
                 "best-resolution": `url(/best_resolution1.png)`
             },
             boxShadow: {

@@ -2,7 +2,10 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import Bunga from '../../assets/bunga.png'
 import Timer from "../Timer";
-export default function Hero() {
+
+export default function Hero({
+                                 guest
+                             }) {
     return (
         <>
             <div className={"bg-hero min-h-screen bg-cover bg-bottom"}>
@@ -27,13 +30,12 @@ export default function Hero() {
                         <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-mono"}>Rifki
                             & Novia</h1>
                         <p className={"text-white"}>Minggu. 5 Desember 2021</p>
-                        <Timer/>
+                        {/*<Timer/>*/}
                         <p className={"text-white"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                         <br/>
                         <div
                             className={"rounded-xl md:w-[600px] w-[300px] text-center justify-center bg-white mx-auto py-10 boxShadow group"}>
-                            <h1 className={"text-2xl font-medium text-black leading-relaxed font-mono"}>Rifki
-                                & Novia</h1>
+                            <h1 className={"text-2xl font-medium text-black leading-relaxed font-mono capitalize"}>{guest}</h1>
                         </div>
                         <br/>
                         <p className={"text-white italic pb-10"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>
