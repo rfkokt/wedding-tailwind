@@ -17,7 +17,7 @@ export default function Pengantin() {
                     <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-mono"}>Rifki
                         Okta Pratama,S.T</h1>
                     <br/>
-                    <p className={"text-white"}>
+                    <p className={"text-white mb-5 md:mb-0"}>
                         Putra Pertama <span className={"font-bold"}>Bpk. Nazwan & Ibu Eri Yanti</span>
                     </p>
                 </div>

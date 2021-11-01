@@ -9,7 +9,7 @@ export default function Hero({
                              }) {
     return (
         <>
-            <div className={"bg-hero min-h-screen bg-cover bg-bottom"}>
+            <div className={"bg-hero bg-cover bg-bottom"}>
                 {/*<motion.div*/}
                 {/*    initial={{scale: 0}}*/}
                 {/*    animate={{rotate: 0, scale: 1}}*/}

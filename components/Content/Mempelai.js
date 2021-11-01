@@ -10,7 +10,7 @@ export default function Mempelai() {
 
     return (
         <>
-            <div className={"bg-color-pallete-150"}>
+            <div className={"bg-color-pallete-150 bg-cover bg-bottom"}>
                 <Image src={MaskBottom}/>
                 <div className={"container mx-auto pt-5"}>
                     <div className={"flex justify-center items-center content-center"}>
@@ -29,7 +29,7 @@ export default function Mempelai() {
                     </div>
                     <Pengantin/>
                 </div>
-                <div className={"-mb-2"}>
+                <div className={"flex md:-mb-2"}>
                     <Image src={MaskTop}/>
                 </div>
             </div>
