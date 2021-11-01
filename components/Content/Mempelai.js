@@ -17,7 +17,8 @@ export default function Mempelai() {
                     <p className={"leading-relaxed  text-white"}>Assalamu’alaikum Warahmatullahi Wabarakatuh
                         Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.
                         Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri
-                        kami:</p>
+                        kami:
+                    </p>
                 </div>
             </div>
         </>
