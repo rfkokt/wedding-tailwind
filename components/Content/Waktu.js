@@ -44,8 +44,11 @@ export default function Waktu() {
                         className="bg-color-pallete-600 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded"
                     >
                         <p className={"flex"}>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fillRule="evenodd"
+                                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                      clipRule="evenodd"/>
                             </svg>
                             &nbsp;
                             Buka Google Maps
@@ -54,7 +57,7 @@ export default function Waktu() {
                 </div>
                 <div className={"mx-auto justify-center flex"}>
                     <iframe
-                        className={"md:w-8/12"}
+                        className={"md:w-8/12 w-11/12"}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9927355798764!2d106.94310101449379!3d-6.264684595465545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d107ea38e83%3A0xb701d016f793eb9b!2sGedung%20Serbaguna%20Graha%20Cibening!5e0!3m2!1sid!2sid!4v1635829099069!5m2!1sid!2sid"
                         height="450" style={{border: 0}} allowFullScreen="" loading="lazy"></iframe>
                 </div>
