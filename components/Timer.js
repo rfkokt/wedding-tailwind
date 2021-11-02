@@ -41,7 +41,7 @@ export default function Timer() {
         <>
             <div className={"flex md:w-5/12 w-full mx-auto mb-8"}>
                 <div
-                    className={"w-3/12 text-center justify-center py-10 shadow-xl mr-5 box-border"}>
+                    className={"w-3/12 text-center justify-center py-10 shadow-xl mr-5 ml-5 box-border"}>
                     <h1 className={"text-2xl font-medium text-color-pallete-600 leading-relaxed"}>{days} <br/> <span
                         className={"text-blackContent"}>Hari</span></h1>
                 </div>

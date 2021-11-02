@@ -3,6 +3,7 @@ import Mempelai from "../components/Content/Mempelai";
 import {useState} from "react";
 import Invited from "../components/Invited/Invited";
 import Waktu from "../components/Content/Waktu";
+import Doa from "../components/Content/Doa";
 
 export default function Home() {
     const [invited, setInvited] = useState(true)
@@ -21,6 +22,7 @@ export default function Home() {
                     <Hero guest={tamu}/>
                     <Mempelai/>
                     <Waktu/>
+                    <Doa/>
                 </>
             }
         </>
