@@ -2,8 +2,7 @@ import Image from "next/image";
 import MaskBottom from '../../assets/mask_bottom.png'
 import Bunga from "../../assets/flower.png";
 import Ring from '../../assets/ring.png'
-import Wedding from '../../assets/wedding.png'
-import BCA_R from '../../assets/BCA-R.jpg'
+import Wedding from '../../assets/Resepsi.png'
 import Timer from "../Timer";
 import MaskTop from "../../assets/mask.png";
 import {useState} from "react";
@@ -55,7 +54,7 @@ export default function Waktu() {
                     <div className="shadow-lg text-center md:w-5/12 md:ml-20 mb-6 px-3 py-10">
 
                         <Image src={Ring} width={100} height={100}/>
-                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-mono"}>
+                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
                             Akad
                             Nikah</h1>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
@@ -70,7 +69,7 @@ export default function Waktu() {
                     </div>
                     <div className="shadow-lg text-center md:w-5/12 md:-ml-12 px-3 mb-6 py-10">
                         <Image src={Wedding} width={100} height={100}/>
-                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-mono"}>Resepsi</h1>
+                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h1>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
                         <p className={"font-bold"}>11:00 - Selesai</p>
                         <br/>
@@ -83,7 +82,7 @@ export default function Waktu() {
                 <Timer/>
                 <div className={"text-center mb-2"}>
                     <button
-                        className="bg-color-pallete-600 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                        className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                         onClick={showInMapClicked}
                     >
                         <p className={"flex"}>
@@ -99,7 +98,7 @@ export default function Waktu() {
                     </button>
                     &nbsp;
                     <button
-                        className="bg-color-pallete-600 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded"
+                        className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded"
                         onClick={() => {
                             setShowModal(true)
                             setCopied({
@@ -157,7 +156,7 @@ export default function Waktu() {
                                                     <br/>
                                                     An Rifki Okta Pratama </h3>
                                                 <button
-                                                    className="bg-color-pallete-600 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
                                                         copyText('rifki')
                                                     }}
@@ -187,7 +186,7 @@ export default function Waktu() {
                                                     <br/>
                                                     An Novia Trie Rizkiyanti </h3>
                                                 <button
-                                                    className="bg-color-pallete-600 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
                                                         copyText('novia')
                                                     }}
@@ -217,7 +216,7 @@ export default function Waktu() {
                                                     Caman Raya Gg. H. Moh. Ali <br/>(Belakang Kopi bob) <br/>No.1 RT
                                                     07/03, Jatibening.</h3>
                                                 <button
-                                                    className="bg-color-pallete-600 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
                                                         copyText('alamat')
                                                     }}

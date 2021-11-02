@@ -8,7 +8,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Poppins', 'sans-serif'],
-                mono: ['Great Vibes, cursive;']
+                mono: ['Great Vibes, cursive;'],
+                curs: ['Birthstone', "cursive"]
             },
             colors: {
                 "theme-blue": "#5515ef",
@@ -49,9 +50,9 @@ module.exports = {
                     "50": "#1e322e",
                     "100": "#FFCCD2",
                     "150": "#C89595",
-                    "200": "#758a7c",
+                    "200": "#206A5D",
                     "250": "#97a5ac",
-                    "300": "#4f745d",
+                    "300": "#6abd87",
                     "350": "#8a96a9",
                     "400": "#365345",
                     "450": "#48596f",

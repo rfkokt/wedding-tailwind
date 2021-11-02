@@ -42,23 +42,23 @@ export default function Timer() {
             <div className={"flex md:w-5/12 w-full mx-auto mb-8"}>
                 <div
                     className={"w-3/12 text-center justify-center py-10 shadow-xl mr-5 ml-5 box-border"}>
-                    <h1 className={"text-2xl font-medium text-color-pallete-600 leading-relaxed"}>{days} <br/> <span
+                    <h1 className={"text-2xl font-medium text-color-pallete-200 leading-relaxed"}>{days} <br/> <span
                         className={"text-blackContent"}>Hari</span></h1>
                 </div>
                 <div
                     className={"w-3/12 text-center justify-center py-10 shadow-xl mr-5"}>
-                    <h1 className={"text-2xl font-medium text-color-pallete-600 leading-relaxed"}>{hours} <br/> <span
+                    <h1 className={"text-2xl font-medium text-color-pallete-200 leading-relaxed"}>{hours} <br/> <span
                         className={"text-blackContent"}>Jam</span></h1>
                 </div>
                 <div
                     className={"w-3/12 text-center justify-center py-10 shadow-xl mr-5"}>
-                    <h1 className={"text-2xl font-medium text-color-pallete-600 leading-relaxed"}>{minutes} <br/> <span
+                    <h1 className={"text-2xl font-medium text-color-pallete-200 leading-relaxed"}>{minutes} <br/> <span
                         className={"text-blackContent"}>Menit</span>
                     </h1>
                 </div>
                 <div
                     className={"w-3/12 text-center justify-center py-10 shadow-xl mr-5"}>
-                    <h1 className={"text-2xl font-medium text-color-pallete-600 leading-relaxed"}>{seconds} <br/> <span
+                    <h1 className={"text-2xl font-medium text-color-pallete-200 leading-relaxed"}>{seconds} <br/> <span
                         className={"text-blackContent"}>Detik</span>
                     </h1>
                 </div>

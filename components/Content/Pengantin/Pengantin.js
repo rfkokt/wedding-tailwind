@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Instagram from '../../../assets/instagram.png'
+
 export default function Pengantin() {
     return (
         <div className={"container mx-auto"}>
@@ -14,7 +17,7 @@ export default function Pengantin() {
                     <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5"}>-
                         Rifki
                         -</h1>
-                    <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-mono"}>Rifki
+                    <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-curs"}>Rifki
                         Okta Pratama,S.T</h1>
                     <br/>
                     <p className={"text-white mb-5 md:mb-0"}>
@@ -31,7 +34,7 @@ export default function Pengantin() {
                     <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 "}>-
                         Novia
                         -</h1>
-                    <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-mono"}>Novia
+                    <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-curs"}>Novia
                         Trie Rizkiyanti,A.Md.Kes</h1>
                     <br/>
                     <p className={"text-white"}>

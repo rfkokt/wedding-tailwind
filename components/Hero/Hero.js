@@ -26,9 +26,9 @@ export default function Hero({
                         <div className={"md:py-10 object-left-top"}>
                             <Image src={Bunga} width={512} height={282}/>
                         </div>
-                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-mono"}>The
+                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>The
                             Wedding Of</h1>
-                        <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-mono"}>Rifki
+                        <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-curs"}>Rifki
                             & Novia</h1>
                         <p className={"text-white"}>Minggu. 5 Desember 2021</p>
                         {/*<Timer/>*/}
@@ -36,7 +36,7 @@ export default function Hero({
                         <br/>
                         <div
                             className={"rounded-xl md:w-[600px] w-[300px] text-center justify-center bg-white mx-auto py-10 boxShadow group"}>
-                            <h1 className={"text-2xl font-medium text-black leading-relaxed font-mono capitalize"}>{guest}</h1>
+                            <h1 className={"text-2xl font-medium text-black leading-relaxed font-curs capitalize"}>{guest}</h1>
                         </div>
                         <br/>
                         <p className={"text-white italic pb-10"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>
