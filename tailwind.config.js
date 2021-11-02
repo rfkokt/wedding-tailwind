@@ -57,6 +57,7 @@ module.exports = {
                     "450": "#48596f",
                     "500": "#c48410",
                     "550": "#a45c5c",
+                    "600": "#ff8282"
                 },
                 "blackContent": "#222222"
             },
@@ -67,7 +68,8 @@ module.exports = {
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
                 'theme-2': '15px 0 35px -5px rgba(0, 0, 0, 0.5)',
-                'theme-3': ' -5px -28px 63px -2px rgba(0,0,0,0.57)'
+                'theme-3': ' -5px -28px 63px -2px rgba(0,0,0,0.57)',
+                'theme-4': '8px 10px 20px -3px rgba(0,0,0,0.73);'
             },
             fontSize: {
                 '10xl': '10rem',

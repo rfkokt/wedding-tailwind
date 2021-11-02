@@ -4,7 +4,7 @@ import BungaKanan from '../../assets/leaves-right.png'
 import MaskTop from '../../assets/mask.png'
 import MaskBottom from '../../assets/mask_bottom.png'
 import Pengantin from "./Pengantin/Pengantin";
-import BawahMempelai from "./BawahMempelai";
+import Waktu from "./Waktu";
 
 export default function Mempelai() {
 

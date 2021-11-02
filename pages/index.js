@@ -2,7 +2,7 @@ import Hero from "../components/Hero/Hero";
 import Mempelai from "../components/Content/Mempelai";
 import {useState} from "react";
 import Invited from "../components/Invited/Invited";
-import BawahMempelai from "../components/Content/BawahMempelai";
+import Waktu from "../components/Content/Waktu";
 
 export default function Home() {
     const [invited, setInvited] = useState(true)
@@ -20,7 +20,7 @@ export default function Home() {
                 <>
                     <Hero guest={tamu}/>
                     <Mempelai/>
-                    <BawahMempelai/>
+                    <Waktu/>
                 </>
             }
         </>
