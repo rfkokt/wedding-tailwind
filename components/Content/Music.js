@@ -32,7 +32,7 @@ const Music = ({url}) => {
         //     <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
         // </div>
         <>
-            <div className="items-end fixed "
+            <div className="items-end fixed z-50"
             >
                 <div className="my-6 ml-2 mx-auto ">
                     {/*content*/}
