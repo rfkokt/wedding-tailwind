@@ -4,6 +4,9 @@ import MaskTop from "../../assets/mask.png";
 import BungaKiri from "../../assets/leaves-left.png";
 import BungaKanan from "../../assets/leaves-right.png";
 import Distance from '../../assets/distance.png'
+import Masker from '../../assets/masker.png'
+import Hand from '../../assets/washing-hands.png'
+import Suhu from '../../assets/thermometer.png'
 
 export default function ProtokolKesehatan({}) {
     return (
@@ -24,29 +27,30 @@ export default function ProtokolKesehatan({}) {
                             hadirin
                             undangan dihimbau untuk memenuhi beberapa peraturan berikut:
                         </p>
-                        <div className={"flex mx-auto justify-center text-white"}>
-                            <div className={"md:w-3/12 w-6/12"}>
-                                <h4 className={"font-bold "}>Menjaga Jarak
+                        <div className={"flex flex-wrap mx-auto justify-center text-white w-full"}>
+                            <div className={"md:w-3/12 w-6/12 mb-10"}>
+                                <h4 className={"font-bold "}>Menjaga <br className={"md:hidden"}/> Jarak
                                 </h4>
-                                <Image src={Distance}/>
+                                <Image src={Distance} width={100} height={100}/>
                                 <p>Saling menjaga jarak ketika menghadiri acara</p>
                             </div>
-                            <div className={"md:w-3/12 w-6/12"}>
+                            <div className={"md:w-3/12 w-6/12 mb-10"}>
                                 <h4 className={"font-bold "}>Menggunakan Masker
                                 </h4>
-                                <Image src={Distance}/>
+                                <Image src={Masker} width={100} height={100}/>
                                 <p>Wajib menggunakan masker selama acara berlangsung</p>
                             </div>
-                            <div className={"md:w-3/12 w-6/12"}>
+                            <div className={"md:w-3/12 w-6/12 mb-10"}>
                                 <h4 className={"font-bold"}>Mencuci Tangan
                                 </h4>
-                                <Image src={Distance}/>
+                                <Image src={Hand} width={100} height={100}/>
                                 <p>Mencuci tangan dan menggunakan hand sanitizer</p>
                             </div>
-                            <div className={"md:w-3/12 w-6/12"}>
-                                <h4 className={"font-bold "}>Saling Menjaga Jarak di Dalam Acara
+                            <div className={"md:w-3/12 w-6/12 mb-10"}>
+                                <h4 className={"font-bold "}>Cek Suhu Tubuh
                                 </h4>
-                                <Image src={Distance}/>
+                                <Image src={Suhu} width={100} height={100}/>
+                                <p>Cek suhu ketika hendak memasuki ruangan acara</p>
                             </div>
 
                         </div>

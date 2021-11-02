@@ -15,7 +15,7 @@ export default function Mempelai() {
                 <div className={"container mx-auto pt-5"}>
                     <div className={"flex justify-center items-center text-center "}>
 
-                        <p className={"text-white md:w-6/12 mb-8"}>وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم
+                        <p className={"text-white md:w-6/12 mb-8 md:text-4xl text-2xl mx-10"}>وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم
                             مِّنْ أَنفُسِكُمْ أَزْوَٰجًا
                             لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ
                             لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</p>

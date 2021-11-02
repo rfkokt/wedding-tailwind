@@ -4,6 +4,7 @@ import {useState} from "react";
 import Invited from "../components/Invited/Invited";
 import Waktu from "../components/Content/Waktu";
 import ProtokolKesehatan from "../components/Content/ProtokolKesehatan";
+import Music from "../components/Content/Music";
 
 export default function Home() {
     const [invited, setInvited] = useState(true)
@@ -19,6 +20,7 @@ export default function Home() {
             {invited ?
                 <Invited changeInvited={changeInvited} nameGuest={nameGuest}/> :
                 <>
+                    <Music/>
                     <Hero guest={tamu}/>
                     <Mempelai/>
                     <Waktu/>
