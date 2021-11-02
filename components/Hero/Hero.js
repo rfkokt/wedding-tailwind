@@ -33,7 +33,7 @@ export default function Hero({
                     <br/>
                     <div
                         className={"rounded-xl md:w-[600px] w-[300px] text-center justify-center bg-white mx-auto py-10 boxShadow group"}>
-                        <h1 className={"text-2xl font-medium text-black leading-relaxed font-curs capitalize"}>{guest}</h1>
+                        <h1 className={"text-3xl font-medium text-black leading-relaxed font-curs capitalize"}>{guest}</h1>
                     </div>
                     <br/>
                     <p className={"text-white italic pb-10"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>

@@ -6,6 +6,7 @@ import Wedding from '../../assets/Resepsi.png'
 import Timer from "../Timer";
 import MaskTop from "../../assets/mask.png";
 import {useState} from "react";
+import {useSpring, animated} from "react-spring";
 
 export default function Waktu() {
     const [showModal, setShowModal] = useState(false);
@@ -13,6 +14,10 @@ export default function Waktu() {
         rifki: false,
         novia: false,
         alamat: false
+    })
+    const fade = useSpring({
+        opacity: showModal ? 1 : 0,
+
     })
     const showInMapClicked = () => {
         window.open("https://www.google.com/maps/place/Gedung+Serbaguna+Graha+Cibening,+Jalan+Caman+Raya+No.+89,+Jatibening+II,+Pondok+Gede,+RT.006%2FRW.003,+Jatibening,+Kec.+Pondokgede,+Kota+Bks,+Jawa+Barat+17412/@-6.264685,106.94529,16z/data=!4m2!3m1!1s0x2e698d107ea38e83:0xb701d016f793eb9b?hl=id&gl=ID");
@@ -122,7 +127,7 @@ export default function Waktu() {
                     </button>
                 </div>
                 {showModal ? (
-                    <>
+                    <animated.div style={fade}>
                         <div
                             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                         >
@@ -247,7 +252,7 @@ export default function Waktu() {
                             </div>
                         </div>
                         <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-                    </>
+                    </animated.div>
                 ) : null}
                 <div className={"mx-auto justify-center flex"}>
                     <iframe
