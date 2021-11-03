@@ -2,6 +2,7 @@ import Image from "next/image";
 import MaskBottom from '../../assets/mask_bottom.png'
 import Bunga from "../../assets/flower.png";
 import MaskTop from "../../assets/mask.png";
+import Love from '../../assets/love.png'
 import Card from "./Card";
 
 export default function Wish() {
@@ -95,7 +96,7 @@ export default function Wish() {
                 </div>
                 <div className={"flex justify-center items-center content-center"}>
                     <h1 className={"md:text-6xl text-center my-5 text-5xl font-medium text-black leading-relaxed font-curs"}>&nbsp;Doa
-                        dari kalian ♥&nbsp;</h1>
+                        dari kalian <Image src={Love} width={50}height={50}/>&nbsp;</h1>
                 </div>
                 <div className={"flex flex-wrap justify-center mb-16 md:mb-0 overflow-auto md:h-128 h-96"}>
                     <div className={"lg:w-3/12 w-full lg:ml-10 lg:mb-0 ml-5 mb-10 mx-5 ml-4 "}>
