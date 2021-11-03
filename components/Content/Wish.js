@@ -97,7 +97,7 @@ export default function Wish() {
                     <h1 className={"md:text-6xl text-center my-5 text-5xl font-medium text-black leading-relaxed font-curs"}>&nbsp;Doa
                         dari kalian ♥&nbsp;</h1>
                 </div>
-                <div className={"flex flex-wrap justify-center overflow-auto md:h-128 h-96"}>
+                <div className={"flex flex-wrap justify-center mb-16 md:mb-0 overflow-auto md:h-128 h-96"}>
                     <div className={"lg:w-3/12 w-full lg:ml-10 lg:mb-0 ml-5 mb-10 mx-5 ml-4 "}>
                         <Card
                             name={"Rifki Okta Pratama"}

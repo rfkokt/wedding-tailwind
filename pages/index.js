@@ -7,6 +7,7 @@ import ProtokolKesehatan from "../components/Content/ProtokolKesehatan";
 import Music from "../components/Content/Music";
 import {useSpring, animated} from "react-spring";
 import Wish from "../components/Content/Wish";
+import Footer from "../components/Content/Footer";
 
 export default function Home() {
     const [invited, setInvited] = useState(true)
@@ -32,6 +33,7 @@ export default function Home() {
                     <Waktu/>
                     <ProtokolKesehatan/>
                     <Wish/>
+                    <Footer/>
                 </animated.div>
             }
         </>
