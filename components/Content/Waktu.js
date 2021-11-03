@@ -63,7 +63,7 @@ export default function Waktu() {
                             Akad
                             Nikah</h1>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
-                        <p className={"font-bold"}>11:00 - Selesai</p>
+                        <p className={"font-bold"}>08:00 - Selesai</p>
                         <br/>
                         <p className={"font-bold"}>Gedung Graha Cibening</p>
                         <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
