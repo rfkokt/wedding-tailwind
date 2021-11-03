@@ -25,7 +25,7 @@ export default function Waktu() {
 
     const copyText = (e) => {
         const rekeningRifki = 1242725876
-        const rekeningNovia = 1242725876
+        const rekeningNovia = 7510870438
         const alamatRumah = "Jl. Caman Raya Gg. H. Moh. Ali (Belakang Kopi bob) No.1 RT 07/03, Jatibening."
         if (e === 'rifki') {
             navigator.clipboard.writeText(rekeningRifki)
@@ -87,7 +87,7 @@ export default function Waktu() {
                 <Timer/>
                 <div className={"text-center mb-2"}>
                     <button
-                        className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                        className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                         onClick={showInMapClicked}
                     >
                         <p className={"flex"}>
@@ -103,7 +103,7 @@ export default function Waktu() {
                     </button>
                     &nbsp;
                     <button
-                        className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded"
+                        className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded"
                         onClick={() => {
                             setShowModal(true)
                             setCopied({
@@ -161,7 +161,7 @@ export default function Waktu() {
                                                     <br/>
                                                     An Rifki Okta Pratama </h3>
                                                 <button
-                                                    className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
                                                         copyText('rifki')
                                                     }}
@@ -187,11 +187,11 @@ export default function Waktu() {
                                                     : null}
                                             </div>
                                             <div className={"mb-10 md:mb-0 md:mr-3 mr-0"}>
-                                                <h3>1242725876 - BNI
+                                                <h3>7510870438 - BCA
                                                     <br/>
                                                     An Novia Trie Rizkiyanti </h3>
                                                 <button
-                                                    className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
                                                         copyText('novia')
                                                     }}
@@ -221,7 +221,7 @@ export default function Waktu() {
                                                     Caman Raya Gg. H. Moh. Ali <br/>(Belakang Kopi bob) <br/>No.1 RT
                                                     07/03, Jatibening.</h3>
                                                 <button
-                                                    className="bg-color-pallete-200 hover:bg-color-pallete-150 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
                                                         copyText('alamat')
                                                     }}

@@ -5,7 +5,8 @@ import Invited from "../components/Invited/Invited";
 import Waktu from "../components/Content/Waktu";
 import ProtokolKesehatan from "../components/Content/ProtokolKesehatan";
 import Music from "../components/Content/Music";
-import {useSpring,animated} from "react-spring";
+import {useSpring, animated} from "react-spring";
+import Wish from "../components/Content/Wish";
 
 export default function Home() {
     const [invited, setInvited] = useState(true)
@@ -18,7 +19,7 @@ export default function Home() {
     }
     const fade = useSpring({
         opacity: invited ? 0 : 1,
-        delay : 50
+        delay: 50
     })
     return (
         <>
@@ -30,6 +31,7 @@ export default function Home() {
                     <Mempelai/>
                     <Waktu/>
                     <ProtokolKesehatan/>
+                    <Wish/>
                 </animated.div>
             }
         </>

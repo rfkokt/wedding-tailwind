@@ -56,7 +56,7 @@ export default function ProtokolKesehatan({}) {
                         </div>
                     </div>
                 </div>
-                <div className={"-mb-2"}>
+                <div className={"-mb-2 flex"}>
                     <Image src={MaskTop}/>
                 </div>
             </div>
