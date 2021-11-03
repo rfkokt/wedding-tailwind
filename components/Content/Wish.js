@@ -3,15 +3,86 @@ import MaskBottom from '../../assets/mask_bottom.png'
 import Bunga from "../../assets/flower.png";
 import MaskTop from "../../assets/mask.png";
 import Love from '../../assets/love.png'
+import Thanks from '../../assets/thank-you.png'
 import Card from "./Card";
+import axios from "axios";
+import {useEffect, useState} from "react";
+import Swal from "sweetalert2";
 
 export default function Wish() {
+    const [listdoa, setDoa] = useState([])
+    const [valueKirim, setValue] = useState({
+        "nama": "",
+        "hubungan": "",
+        "doa": "",
+        "hadir": true
+    })
     const checkData = (r) => {
-        console.log('debug', r.target.value)
+        setValue({
+            ...valueKirim,
+            "hadir": r.target.value
+        })
+    }
+    console.log('debug test hadir', valueKirim.hadir)
+
+    useEffect(() => {
+        getData()
+    }, [])
+    const getData = () => {
+        axios.get(`https://moexpress.herokuapp.com/api/posts`)
+            .then(data => {
+                setDoa(data.data)
+            }).catch(err => {
+            console.log('debug', err)
+        })
+    }
+    const getValue = (e, d) => {
+        setValue({
+            ...valueKirim,
+            [e]: d
+        })
+    }
+
+    const kirimPesan = () => {
+        console.log('debug test', valueKirim.hadir)
+        const kirim = {
+            "nama": valueKirim.nama,
+            "hubungan": valueKirim.hubungan,
+            "doa": valueKirim.doa,
+            "hadir": valueKirim.hadir
+        }
+        axios.post(`https://moexpress.herokuapp.com/api/posts`, kirim)
+            .then(() => {
+                Swal.fire({
+                    imageUrl: `https://cdn-icons-png.flaticon.com/512/3158/3158981.png`,
+                    imageWidth: 200,
+                    imageHeight: 200,
+                    title: 'Terimakasih atas ucapannya',
+                    showConfirmButton: false,
+                    timer: 2500
+                })
+                getData()
+                setValue({
+                    "nama": "",
+                    "hubungan": "",
+                    "doa": "",
+                    "hadir": true
+                })
+            }).catch(err => {
+            console.log('debug err', err)
+            Swal.fire({
+                imageUrl: `https://cdn-icons-png.flaticon.com/512/5706/5706597.png`,
+                imageWidth: 200,
+                imageHeight: 200,
+                title: 'Silahkan coba lagi nanti yaa...',
+                showConfirmButton: false,
+                timer: 2500
+            })
+        })
     }
     return (
         <>
-            <div className={"bg-color-white bg-cover container bg-bottom"}>
+            <div className={"bg-color-white bg-cover bg-bottom"}>
                 <Image src={MaskBottom}/>
                 <div className={"flex justify-center items-center content-center md:-mt-10 mb-10"}>
                     <Image src={Bunga}/>
@@ -22,14 +93,14 @@ export default function Wish() {
                 </div>
                 <div className={"flex justify-center items-center content-center"}>
 
-                    <div className="shadow-lg mx-auto md:w-8/12 w-11/12 mb-6 px-3 py-10">
+                    <div className="shadow-lg mx-auto md:w-8/12 lg:w-6/12 w-11/12 mb-6 px-3 py-10">
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
                             Nama
                         </label>
                         <input type="text"
                                placeholder="Nama.."
-                            // value={tamu}
-                               onChange={(e) => e.target.value}
+                               value={valueKirim.nama}
+                               onChange={(e) => getValue('nama', e.target.value)}
                                className={" text-sm appearance-none border-none bg-transparent" +
                                "justify-center leading-tight focus:outline-none text-black capitalize mb-10"}/>
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
@@ -37,8 +108,8 @@ export default function Wish() {
                         </label>
                         <input type="text"
                                placeholder="Teman/Sahabat/Keluarga.."
-                            // value={tamu}
-                               onChange={(e) => e.target.value}
+                               value={valueKirim.hubungan}
+                               onChange={(e) => getValue('hubungan', e.target.value)}
                                className={" text-sm appearance-none border-none bg-transparent" +
                                "justify-center leading-tight focus:outline-none text-black capitalize mb-10"}/>
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
@@ -46,9 +117,9 @@ export default function Wish() {
                         </label>
                         <textarea type="text"
                                   placeholder="Ucapan & Doa..."
-                            // value={tamu}
-                                  onChange={(e) => e.target.value}
-                                  className={"text-sm h-[200px] appearance-none border-none bg-transparent" +
+                                  value={valueKirim.doa}
+                                  onChange={(e) => getValue('doa', e.target.value)}
+                                  className={"text-sm h-[200px] w-full appearance-none border-none bg-transparent" +
                                   "justify-center leading-tight focus:outline-none text-black capitalize"}/>
                         <div>
                             <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
@@ -59,8 +130,7 @@ export default function Wish() {
                                     type="radio"
                                     className="form-radio"
                                     name="radio"
-                                    value="1"
-                                    checked
+                                    value={true}
                                     onClick={(e) => {
                                         checkData(e)
                                     }}
@@ -68,7 +138,7 @@ export default function Wish() {
                                 <span className="ml-2">Hadir</span>
                             </label>
                             <label className="inline-flex items-center">
-                                <input type="radio" className="form-radio" name="radio" value="2"
+                                <input type="radio" className="form-radio" name="radio" value={false}
                                        onClick={(e) => {
                                            checkData(e)
                                        }}
@@ -79,6 +149,7 @@ export default function Wish() {
                         <br/>
                         <button
                             className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded"
+                            onClick={kirimPesan}
                         >
                             <p className={"flex"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20"
@@ -96,169 +167,21 @@ export default function Wish() {
                 </div>
                 <div className={"flex justify-center items-center content-center"}>
                     <h1 className={"md:text-6xl text-center my-5 text-5xl font-medium text-black leading-relaxed font-curs"}>&nbsp;Doa
-                        dari kalian <Image src={Love} width={50}height={50}/>&nbsp;</h1>
+                        dari kalian <Image src={Love} width={50} height={50}/>&nbsp;</h1>
                 </div>
                 <div className={"flex flex-wrap justify-center mb-16 md:mb-0 overflow-auto md:h-128 h-96"}>
-                    <div className={"lg:w-3/12 w-full lg:ml-10 lg:mb-0 ml-5 mb-10 mx-5 ml-4 "}>
-                        <Card
-                            name={"Rifki Okta Pratama"}
-                            desc={"With high resolution camera,\n" +
-                            "picture become clear and beautiful.\n" +
-                            "It’s so easy to operate drone."}
-                            work={"Keluarga"}
-                        />
-                    </div>
-                    <div className={" lg:w-3/12 w-full  lg:ml-10 lg:mb-0 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Jennie Obrien"}
-                            desc={"Taking high view video become easy and faster. Battery performance really helping for making film."}
-                            work={"Director Film"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
-                    <div className={"lg:w-3/12 w-full  lg:ml-10 lg:mb-5 ml-5 mb-10 mx-5 ml-4"}>
-                        <Card
-                            name={"Lisa Millz"}
-                            desc={"Making video content for my trip\n" +
-                            "vlog so powerful and wonderful.\n" +
-                            "Love the video quality."}
-                            work={"Content WQCreator"}
-                        />
-                    </div>
+                    {listdoa.map((item, index) => (
+                        <>
+                            <div className={"lg:w-3/12 w-full lg:ml-10 ml-5 mb-10 mx-5 ml-4 "}>
+                                <Card
+                                    key={index}
+                                    name={item.nama}
+                                    desc={item.doa}
+                                    work={item.hubungan}
+                                />
+                            </div>
+                        </>
+                    ))}
                 </div>
 
                 <div className={"-mb-2"}>

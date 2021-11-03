@@ -21,7 +21,7 @@ export default function Pengantin() {
                         Okta Pratama,S.T</h1>
                     <br/>
                     <p className={"text-white mb-5 md:mb-0"}>
-                        Putra Pertama <span className={"font-bold"}>Bpk. Nazwan & Ibu Eri Yanti</span>
+                        Putra Pertama <br/> <span className={"font-bold"}>Bpk. Nazwan & Ibu Eri Yanti</span>
                     </p>
                 </div>
                 <div className={'md:w-6/12 w-full'}>
@@ -38,7 +38,7 @@ export default function Pengantin() {
                         Trie Rizkiyanti,A.Md.Kes</h1>
                     <br/>
                     <p className={"text-white"}>
-                        Putri Ketiga<span className={"font-bold"}> Bpk. Abdul Hamid & Ibu Mas`ulah (Almh)
+                        Putri Ketiga <br/><span className={"font-bold"}> Bpk. Abdul Hamid & Ibu Mas`ulah (Almh)
                     </span>
                     </p>
                 </div>
