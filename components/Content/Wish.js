@@ -9,7 +9,9 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import Swal from "sweetalert2";
 
-export default function Wish() {
+export default function Wish({
+                                 guest
+                             }) {
     const [listdoa, setDoa] = useState([])
     const [valueKirim, setValue] = useState({
         "nama": "",
@@ -46,7 +48,7 @@ export default function Wish() {
     const kirimPesan = () => {
         console.log('debug test', valueKirim.hadir)
         const kirim = {
-            "nama": valueKirim.nama,
+            "nama": guest,
             "hubungan": valueKirim.hubungan,
             "doa": valueKirim.doa,
             "hadir": valueKirim.hadir
@@ -99,10 +101,10 @@ export default function Wish() {
                         </label>
                         <input type="text"
                                placeholder="Nama.."
-                               value={valueKirim.nama}
-                               onChange={(e) => getValue('nama', e.target.value)}
-                               className={" text-sm appearance-none border-none bg-transparent" +
-                               "justify-center leading-tight focus:outline-none text-black capitalize mb-10"}/>
+                               value={guest}
+                            // onChange={(e) => getValue('nama', e.target.value)}
+                               className={"text-3xl appearance-none font-mono border-none bg-transparent " +
+                               "justify-center leading-tight focus:outline-none text-black capitalize mb-2"}/>
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
                             Hubungan
                         </label>
@@ -110,7 +112,7 @@ export default function Wish() {
                                placeholder="Teman/Sahabat/Keluarga.."
                                value={valueKirim.hubungan}
                                onChange={(e) => getValue('hubungan', e.target.value)}
-                               className={" text-sm appearance-none border-none bg-transparent" +
+                               className={" text-sm w-full appearance-none border-none bg-transparent" +
                                "justify-center leading-tight focus:outline-none text-black capitalize mb-10"}/>
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
                             Ucapan & Doa

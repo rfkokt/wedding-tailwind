@@ -32,7 +32,7 @@ export default function Home() {
                     <Mempelai/>
                     <Waktu/>
                     <ProtokolKesehatan/>
-                    <Wish/>
+                    <Wish guest={tamu}/>
                     <Footer/>
                 </animated.div>
             }
