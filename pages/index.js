@@ -29,25 +29,25 @@ export default function Home() {
                 <meta charset={"UTF-8"}/>
                 <title>The Wedding Of Novi & Rifki</title>
                 <meta name="description" content="Wedding Invitation"/>
-                <meta property="og:locale" content="en_US"/>
-                <meta property="og:type" content="article"/>
-                <meta property="og:title" content="Novia & Rifki"/>
-                <meta property="og:description" content="Wedding Invitation"/>
-                <meta property="og:url" content="https://www.pernikahannovirifki.my.id/"/>
-                <meta property="og:site_name" content="Wedding Invitation Novia & Rifki"/>
-                <meta property="og:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png"/>
-                <meta property="og:image:secure_url"
-                      content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png"/>
-                <meta property="og:image:width" content="1296"/>
-                <meta property="og:image:height" content="864"/>
-                <meta property="og:image:alt" content="Novia & Rifki"/>
-                <meta property="og:image:type" content="image/jpeg"/>
-                <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:title" content="Novia & Rifki"/>
-                <meta name="twitter:description" content="Wedding Invitation"/>
-                <meta name="twitter:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png"/>
-                <meta name="viewport" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" property="og:title"
-                      key="title"/>
+                <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content="Novia &amp; Rifki" />
+                <meta property="og:description" content="Wedding Invitation" />
+                <meta property="og:url" content="https://www.pernikahannovirifki.my.id/" />
+                <meta property="og:site_name" content="Wedding Invitation Novia & Rifki" />
+                <meta property="og:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
+                <meta property="og:image:secure_url" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
+                <meta property="og:image:width" content="1296" />
+                <meta property="og:image:height" content="864" />
+                <meta property="og:image:alt" content="Novia &#038; Rifki" />
+                <meta property="og:image:type" content="image/jpeg" />
+                <meta property="ya:ovs:upload_date" content="2018-11-10" />
+                <meta property="ya:ovs:allow_embed" content="true" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Novia &amp; Rifki" />
+                <meta name="twitter:description" content="Wedding Invitation" />
+                <meta name="twitter:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             {invited ?
