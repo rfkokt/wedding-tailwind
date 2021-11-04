@@ -5,7 +5,7 @@ export default function Card({name, desc, src, work}) {
     return (
         <div className={"rounded-xl justify-center boxShadow group"}>
             <div
-                className="left-side w-full h-full border-2 rounded-lg transition-all duration-500 transform group-hover:scale-125">
+                className="left-side w-full h-full border-2 rounded-lg transition-all duration-500 transform">
                 <p className={"px-7 py-3 italic text-center"}>
                     {`"`}{desc}{`"`}
                 </p>

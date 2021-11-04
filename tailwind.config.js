@@ -64,7 +64,8 @@ module.exports = {
             },
             backgroundImage: {
                 "invited": `url(/hero4.jpg)`,
-                "best-resolution": `url(/best_resolution1.png)`
+                "best-resolution": `url(/best_resolution1.png)`,
+                "footer" : `url(/footer1.jpg)`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',

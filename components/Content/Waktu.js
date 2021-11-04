@@ -7,6 +7,7 @@ import Timer from "../Timer";
 import MaskTop from "../../assets/mask.png";
 import {useState} from "react";
 import {useSpring, animated} from "react-spring";
+import Instagram from "../../assets/instagram.png";
 
 export default function Waktu() {
     const [showModal, setShowModal] = useState(false);
@@ -64,6 +65,17 @@ export default function Waktu() {
                             Nikah</h1>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
                         <p className={"font-bold"}>08:00 - Selesai</p>
+                        <a href="https://www.instagram.com/noviavia19/" target={"_blank"} rel="noreferrer">
+                            <button
+                                className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded"
+                            >
+                                <p className={"flex"}>
+                                    <Image src={Instagram} width={25} height={25}/>
+                                    &nbsp;
+                                    Live Instagram
+                                </p>
+                            </button>
+                        </a>
                         <br/>
                         <p className={"font-bold"}>Gedung Graha Cibening</p>
                         <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
@@ -217,7 +229,7 @@ export default function Waktu() {
                                             </div>
                                             <div>
                                                 <h3><span
-                                                    className={"font-bold"}>Kediaman mempelia wanita : <br/></span>Jl.
+                                                    className={"font-bold"}>Kediaman mempelai wanita : <br/></span>Jl.
                                                     Caman Raya Gg. H. Moh. Ali <br/>(Belakang Kopi bob) <br/>No.1 RT
                                                     07/03, Jatibening.</h3>
                                                 <button
