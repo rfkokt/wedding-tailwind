@@ -27,7 +27,7 @@ export default function Home() {
         <>
             <Head>
                 <title>The Wedding Of Novi & Rifki</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" property="og:title" key="title"/>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" property="og:title" key="titlet"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             {invited ?
