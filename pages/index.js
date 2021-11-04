@@ -46,6 +46,8 @@ export default function Home() {
                 <meta name="twitter:title" content="Novia & Rifki"/>
                 <meta name="twitter:description" content="Wedding Invitation"/>
                 <meta name="twitter:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png"/>
+                <meta name="viewport" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" property="og:title"
+                      key="title"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             {invited ?
