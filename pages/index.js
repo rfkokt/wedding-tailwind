@@ -30,18 +30,18 @@ export default function Home() {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" property="og:title" key="titlet"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            {invited ?
-                <Invited changeInvited={changeInvited} nameGuest={nameGuest}/> :
-                <animated.div style={fade}>
-                    <Music/>
+            {/*{invited ?*/}
+            {/*    <Invited changeInvited={changeInvited} nameGuest={nameGuest}/> :*/}
+            {/*    <animated.div style={fade}>*/}
+            {/*        <Music/>*/}
                     <Hero guest={tamu}/>
                     <Mempelai/>
                     <Waktu/>
                     <ProtokolKesehatan/>
                     <Wish guest={tamu}/>
                     <Footer/>
-                </animated.div>
-            }
+            {/*    </animated.div>*/}
+            {/*}*/}
         </>
     )
 }
