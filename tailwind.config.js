@@ -64,7 +64,7 @@ module.exports = {
             },
             backgroundImage: {
                 "invited": `url(/hero4.webp)`,
-                "best-resolution": `url(/best_resolution1.png)`,
+                // "best-resolution": `url(/best_resolution1.png)`,
                 "footer": `url(/footer1.webp)`
             },
             boxShadow: {
