@@ -9,9 +9,8 @@ export default function Pengantin() {
                 <div className={'md:w-6/12 w-full '}>
                     <div className={"flex items-center justify-center"}>
                         <img
-                            className={"rounded-full  w-[300px] h-[300px]"}
-                            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                            alt=""/>
+                            className={"rounded-full  w-[350px] h-[350px]"}
+                            src="https://i.ibb.co/5Y5ryWq/IMG-20190116-230737-removebg-preview-removebg-preview-4.png" alt=""/>
                     </div>
 
                     <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5"}>-
@@ -27,8 +26,8 @@ export default function Pengantin() {
                 <div className={'md:w-6/12 w-full'}>
                     <div className={"flex items-center justify-center"}>
                         <img
-                            className={"rounded-full  w-[300px] h-[300px]"}
-                            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+                            className={"rounded-full bg-auto h-[350px] w-[350px]"}
+                            src="https://i.ibb.co/NLscZxH/20211111-190432-removebg-preview-removebg-preview-2.png"
                             alt=""/>
                     </div>
                     <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 "}>-
@@ -42,6 +41,7 @@ export default function Pengantin() {
                     </span>
                     </p>
                 </div>
+
             </div>
         </div>
     )

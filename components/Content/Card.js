@@ -1,7 +1,6 @@
 import profile from '../../assets/blank-profile.png'
 
 export default function Card({name, desc, src, work}) {
-    console.log('debub', src)
     return (
         <div className={"rounded-xl justify-center boxShadow group"}>
             <div
