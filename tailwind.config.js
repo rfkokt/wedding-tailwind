@@ -63,9 +63,9 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url(/hero4.jpg)`,
-                "best-resolution": `url(/best_resolution1.png)`,
-                "footer" : `url(/footer1.jpg)`
+                "invited": `url(/hero4.webp)`,
+                // "best-resolution": `url(/best_resolution1.png)`,
+                "footer": `url(/footer1.webp)`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -99,7 +99,7 @@ module.exports = {
                          }) {
             const utilities = {
                 ".bg-hero": {
-                    "background-image": "url(/hero5.jpg)",
+                    "background-image": "url(/hero5.webp)",
                 }
             }
             addUtilities(utilities);
