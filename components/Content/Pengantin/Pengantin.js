@@ -9,7 +9,7 @@ export default function Pengantin() {
                 <div className={'md:w-6/12 w-full '}>
                     <div className={"flex items-center justify-center"}>
                         <img
-                            className={"rounded-full  w-[350px] h-[350px]"}
+                            className={"rounded-full  w-[200px] h-[200px]"}
                             src="https://i.ibb.co/5Y5ryWq/IMG-20190116-230737-removebg-preview-removebg-preview-4.png" alt=""/>
                     </div>
 
@@ -26,7 +26,7 @@ export default function Pengantin() {
                 <div className={'md:w-6/12 w-full'}>
                     <div className={"flex items-center justify-center"}>
                         <img
-                            className={"rounded-full bg-auto h-[350px] w-[350px]"}
+                            className={"rounded-full bg-auto h-[200px] w-[200px]"}
                             src="https://i.ibb.co/NLscZxH/20211111-190432-removebg-preview-removebg-preview-2.png"
                             alt=""/>
                     </div>
