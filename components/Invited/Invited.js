@@ -40,8 +40,8 @@ export default function Invited({
                            placeholder="Daftar tamu..."
                            value={tamu}
                            onChange={(e) => validate(e.target.value)}
-                           className={"font-curs text-5xl md:w-[600px] w-[300px] text-center justify-center appearance-none border-none bg-transparent text-center " +
-                           "justify-center leading-tight focus:outline-none text-blackContent capitalize"}/>
+                           className={"font-curs text-5xl md:w-[600px] w-[300px] appearance-none border-none md:bg-transparent bg-color-pallete-650 rounded py-3 md:py-0 text-center " +
+                           "justify-center leading-tight focus:outline-none text-black capitalize"}/>
                     {valid ?
                         <p className="text-red-500 text-xs italic">Silahkan isi daftar tamu terlebih dahulu.</p>
                         : null
