@@ -3,7 +3,7 @@ import Image from "next/image";
 import Play from "../../assets/play.png"
 
 const useAudio = url => {
-    const [audio] = useState(new Audio(`https://cdn.sndup.net/8xdm/Zack+Tabudlo++Give+Me+Your+Forever+Lyric+Video.mp3?token=tlT1yI7GC7Ls_cLNtnJ8ZstoPlKtYwS66hrc5BxvTsM&token_path=%2F8xdm%2F&expires=1637552867`));
+    const [audio] = useState(new Audio(`https://filedropper.com/d/secure/uploads/3399`));
     const [playing, setPlaying] = useState(true);
 
     const toggle = () => setPlaying(!playing);

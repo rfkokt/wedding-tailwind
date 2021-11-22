@@ -15,7 +15,7 @@ export default function Hero({
     })
     return (
         <>
-            <div className={"bg-hero bg-cover bg-bottom"}>
+            <div className={"bg-hero bg-cover bg-top"}>
                 <div className={"text-center opacity-100"}>
                     <div className={"md:py-10 object-left-top"}>
                         <Image src={Bunga} width={512} height={282}/>
