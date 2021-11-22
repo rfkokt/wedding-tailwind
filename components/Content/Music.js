@@ -3,7 +3,7 @@ import Image from "next/image";
 import Play from "../../assets/play.png"
 
 const useAudio = url => {
-    const [audio] = useState(new Audio(`https://filedropper.com/d/secure/uploads/3399`));
+    const [audio] = useState(new Audio(`https://www.pernikahannovirifki.my.id/musik.mp3`));
     const [playing, setPlaying] = useState(true);
 
     const toggle = () => setPlaying(!playing);
