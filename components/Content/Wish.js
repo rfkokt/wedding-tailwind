@@ -103,7 +103,7 @@ export default function Wish({
                                placeholder="Nama.."
                                value={guest}
                             // onChange={(e) => getValue('nama', e.target.value)}
-                               className={"text-3xl appearance-none font-mono border-none bg-transparent " +
+                               className={"text-2xl appearance-none font-mono border-none bg-transparent " +
                                "justify-center leading-tight focus:outline-none text-black capitalize mb-2"}/>
                         <label className="block text-gray-700 md:text-lg font-bold mb-2" htmlFor="username">
                             Hubungan
