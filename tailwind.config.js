@@ -63,7 +63,7 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url(/hero4.webp)`,
+                "invited": `url(/heronew.webp)`,
                 // "best-resolution": `url(/best_resolution1.png)`,
                 "footer": `url(/footer1.webp)`
             },
