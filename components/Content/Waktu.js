@@ -74,6 +74,7 @@ export default function Waktu() {
                                     &nbsp;
                                     Live Instagram
                                 </p>
+                                <p>@noviavia19</p>
                             </button>
                         </a>
                         <br/>
@@ -233,7 +234,7 @@ export default function Waktu() {
                                                     Caman Raya Gg. H. Moh. Ali <br/>(Belakang Kopi bob) <br/>No.1 RT
                                                     07/03, Jatibening.</h3>
                                                 <button
-                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-5 md:mb-0"
                                                     onClick={() => {
                                                         copyText('alamat')
                                                     }}
@@ -257,7 +258,9 @@ export default function Waktu() {
                                                     </>
                                                     : null}
                                             </div>
-
+                                            <h3><span
+                                                className={"font-bold"}>Setelah transfer, mohon konfirmasi ke nomor dibawah ini : <br/></span>Novi
+                                                : <br/>08997497842 <br/>Rifki : <br/> 089635112452</h3>
                                         </div>
                                     </div>
                                 </div>
