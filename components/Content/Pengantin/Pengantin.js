@@ -10,7 +10,7 @@ export default function Pengantin() {
                         <div className={"flex items-center justify-center"}>
                             <img
                                 className={"rounded-full bg-auto h-[200px] w-[200px]"}
-                                src="https://i.ibb.co/P93ynNF/Beauty-Plus-20211111202506314-save-removebg-preview-2.png"
+                                src="https://i.ibb.co/D8CCMhM/Beauty-Plus-20211123113928118-save.jpg"
                                 alt=""/>
                         </div>
                         <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 "}>-
@@ -66,7 +66,7 @@ export default function Pengantin() {
                     <div className={"flex items-center w-full justify-center"}>
                         <img
                             className={"rounded-full mr-10 w-[150px] h-[150px]"}
-                            src="https://i.ibb.co/P93ynNF/Beauty-Plus-20211111202506314-save-removebg-preview-2.png"
+                            src="https://i.ibb.co/D8CCMhM/Beauty-Plus-20211123113928118-save.jpg"
                             alt=""/>
                         <img
                             className={"rounded-full bg-auto h-[150px] w-[150px]"}
