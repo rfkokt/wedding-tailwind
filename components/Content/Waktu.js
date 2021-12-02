@@ -64,7 +64,8 @@ export default function Waktu() {
                             Akad
                             Nikah</h1>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
-                        <p className={"font-bold"}>08:00 - Selesai</p>
+                        <p className={"font-bold"}>08:00 - 10:00</p>
+                        <p className={"font-bold"}>(Khusus Keluarga)</p>
                         <a href="https://www.instagram.com/noviavia19/" target={"_blank"} rel="noreferrer">
                             <button
                                 className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded"
@@ -89,7 +90,7 @@ export default function Waktu() {
                         <Image src={Wedding} width={100} height={100}/>
                         <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h1>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
-                        <p className={"font-bold"}>11:00 - Selesai</p>
+                        <p className={"font-bold"}>11:00 - 16:00</p>
                         <br/>
                         <p className={"font-bold"}>Gedung Graha Cibening</p>
                         <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
