@@ -66,7 +66,7 @@ module.exports = {
             backgroundImage: {
                 "invited": `url(/heronew.webp)`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url(/footer1.webp)`
+                "footer": `url(/footer_hero.webp)`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -100,7 +100,10 @@ module.exports = {
                          }) {
             const utilities = {
                 ".bg-hero": {
-                    "background-image": "url(/hero5.webp)",
+                    "background-image": "url(/hero5_.webp)",
+                },
+                ".bg-mempelai": {
+                    "background-image": "url(/heroKereta.webp)",
                 }
             }
             addUtilities(utilities);

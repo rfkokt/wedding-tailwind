@@ -63,10 +63,10 @@ export default function Waktu() {
                         <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
                             Akad
                             Nikah</h1>
-                        <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
+                        <p className={"font-bold"}>Sabtu, 03 Juni 2023</p>
                         <p className={"font-bold"}>08:00 - 10:00</p>
                         <p className={"font-bold"}>(Khusus Keluarga)</p>
-                        <a href="https://www.instagram.com/noviavia19/" target={"_blank"} rel="noreferrer">
+                        <a href="https://www.instagram.com/ichautami07/" target={"_blank"} rel="noreferrer">
                             <button
                                 className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded"
                             >
@@ -75,11 +75,11 @@ export default function Waktu() {
                                     &nbsp;
                                     Live Instagram
                                 </p>
-                                <p>@noviavia19</p>
+                                <p>@ichautami07</p>
                             </button>
                         </a>
                         <br/>
-                        <p className={"font-bold"}>Gedung Graha Cibening</p>
+                        <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
                         <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
                             Jatibening, Kec.
                             Pondokgede, Kota Bks, Jawa Barat 17412</p>
@@ -89,10 +89,10 @@ export default function Waktu() {
                     <div className="shadow-lg text-center md:w-5/12 md:-ml-12 px-3 mb-6 py-10">
                         <Image src={Wedding} width={100} height={100}/>
                         <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h1>
-                        <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
-                        <p className={"font-bold"}>11:00 - 16:00</p>
+                        <p className={"font-bold"}>Minggu, 04 Juni 2023</p>
+                        <p className={"font-bold"}>08:00 - Selesai</p>
                         <br/>
-                        <p className={"font-bold"}>Gedung Graha Cibening</p>
+                        <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
                         <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
                             Jatibening, Kec.
                             Pondokgede, Kota Bks, Jawa Barat 17412</p>

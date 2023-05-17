@@ -15,7 +15,7 @@ export default function Hero({
     })
     return (
         <>
-            <div className={"bg-hero bg-cover bg-top"}>
+            <div className={"bg-hero bg-cover bg-bottom"}>
                 <div className={"text-center opacity-100"}>
                     <div className={"md:py-10 object-left-top"}>
                         <Image src={Bunga} width={512} height={282}/>
@@ -24,10 +24,9 @@ export default function Hero({
                         <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>The
                             Wedding Of</h1>
                         <h1
-                            className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-curs"}>Rifki
-                            & Novia</h1>
+                            className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-curs"}>Aziz & Icha</h1>
                     </animated.div>
-                    <p className={"text-white"}>Minggu. 5 Desember 2021</p>
+                    <p className={"text-white"}>Minggu. 4 Juni 2023</p>
                     {/*<Timer/>*/}
                     <p className={"text-white"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                     <br/>
