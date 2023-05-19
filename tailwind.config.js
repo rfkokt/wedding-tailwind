@@ -64,7 +64,7 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url(/heronew.jpg)`,
+                "invited": `url('/heronew.jpg')`,
                 // "best-resolution": `url(/best_resolution1.png)`,
                 "footer": `url(/footer_hero.jpeg)`
             },
