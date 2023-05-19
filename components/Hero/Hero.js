@@ -24,14 +24,14 @@ export default function Hero({
                         <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>The
                             Wedding Of</h1>
                         <h1
-                            className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-20 font-curs"}>Aziz & Icha</h1>
+                            className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-10 mb-10 font-curs"}>Aziz & Icha</h1>
                     </animated.div>
                     <p className={"text-white"}>Minggu. 4 Juni 2023</p>
                     {/*<Timer/>*/}
                     <p className={"text-white"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                     <br/>
                     <div
-                        className={"rounded-xl md:w-[600px] w-[300px] text-center justify-center bg-white mx-auto py-10 boxShadow group"}>
+                        className={"rounded-xl md:w-[500px] w-[300px] text-center justify-center bg-white mx-auto py-2 boxShadow group"}>
                         <h1 className={"text-3xl font-medium text-black leading-relaxed font-curs capitalize"}>{guest}</h1>
                     </div>
                     <br/>

@@ -5,7 +5,7 @@ import Instagram from '../../assets/instagram.png'
 export default function Footer({}) {
     return (
         <>
-            <div className={"bg-footer bg-cover bg-no-repeat bg-center"}>
+            <div className={"bg-footer bg-no-repeat bg-top"}>
                 <Image src={MaskBottom}/>
                 <div className={"container mx-auto pt-5 pb-20"}>
                     <div className={"flex justify-center items-center content-center"}>

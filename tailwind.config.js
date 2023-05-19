@@ -64,9 +64,9 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url('/invitation/heronew.jpg')`,
+                "invited": `url('/invitation/heronew.webp')`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url('/invitation/footer_hero.jpeg')`
+                "footer": `url('/invitation/footer_hero.webp')`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
