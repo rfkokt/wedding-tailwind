@@ -27,7 +27,7 @@ export default function Home() {
         <>
             <Head>
                 <meta charSet={"UTF-8"}/>
-                <title>The Wedding Of Aziz & Icha</title>
+                <title>The Wedding of Aziz & Icha</title>
                 <meta name="description" content="Wedding Invitation"/>
                 <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
                 <meta property="og:locale" content="en_US" />
