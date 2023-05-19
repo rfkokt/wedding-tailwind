@@ -1,5 +1,6 @@
-module.exports = {
-  reactStrictMode: true,
-  output: 'export',
-  unoptimized: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true
 }
+
+module.exports = nextConfig
