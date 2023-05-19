@@ -174,7 +174,7 @@ export default function Wish({
                 <div className={"flex flex-wrap justify-center mb-16 md:mb-0 overflow-auto md:h-128 h-96"}>
                     {listdoa.map((item, index) => (
                         <>
-                            <div className={"lg:w-3/12 w-full lg:ml-10 ml-5 mb-10 mx-5 ml-4 "}>
+                            <div className={"lg:w-3/12 w-full lg:ml-10 mb-10 mx-5 ml-4 "}>
                                 <Card
                                     key={index}
                                     name={item.nama}

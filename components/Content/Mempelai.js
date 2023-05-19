@@ -10,7 +10,7 @@ export default function Mempelai() {
 
     return (
         <>
-            <div className={"bg-mempelai bg-cover bg-center bg-top"}>
+            <div className={"bg-mempelai bg-cover bg-top"}>
                 <Image src={MaskBottom}/>
                 <div className={"container mx-auto pt-5"}>
                     <div className={"flex justify-center items-center text-center "}>
