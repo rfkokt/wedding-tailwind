@@ -95,9 +95,7 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function ({
-                             addUtilities
-                         }) {
+        plugin(function ({addUtilities}) {
             const utilities = {
                 ".bg-hero": {
                     "background-image": "url(/hero5_.webp)",
