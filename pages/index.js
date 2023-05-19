@@ -48,7 +48,7 @@ export default function Home() {
                 <meta name="twitter:title" content="Icha &amp; Aziz" />
                 <meta name="twitter:description" content="Wedding Invitation" />
                 <meta name="twitter:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/invitation/favicon.ico"/>
             </Head>
             {invited ?
                 <Invited changeInvited={changeInvited} nameGuest={nameGuest}/> :
