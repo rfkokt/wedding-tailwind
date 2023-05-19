@@ -64,9 +64,9 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url('/heronew.jpg')`,
+                "invited": `url('/invitation/heronew.jpg')`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url(/footer_hero.jpeg)`
+                "footer": `url('/invitation/footer_hero.jpeg')`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -98,10 +98,10 @@ module.exports = {
         plugin(function ({addUtilities}) {
             const utilities = {
                 ".bg-hero": {
-                    "background-image": "url(/hero5_.webp)",
+                    "background-image": "url('/invitation/hero5_.webp')",
                 },
                 ".bg-mempelai": {
-                    "background-image": "url(/heroKereta.webp)",
+                    "background-image": "url('/invitation/heroKereta.webp')",
                 }
             }
             addUtilities(utilities);
