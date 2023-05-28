@@ -11,7 +11,7 @@ import Suhu from '../../assets/thermometer.png'
 export default function ProtokolKesehatan({}) {
     return (
         <>
-            <div className={"bg-color-pallete-250 bg-cover bg-bottom"}>
+            <div className={"bg-abu-200 bg-cover bg-bottom"}>
                 <Image src={MaskBottom}/>
                 <div className={"container mx-auto pt-5"}>
                     <div className={"flex justify-center items-center content-center"}>

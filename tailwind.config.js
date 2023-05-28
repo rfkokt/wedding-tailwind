@@ -66,7 +66,7 @@ module.exports = {
             backgroundImage: {
                 "invited": `url('https://azizdhaifullah.github.io/invitation/depan.webp')`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url('https://azizdhaifullah.github.io/invitation/footer_hero.webp')`
+                "footer": `url('https://azizdhaifullah.github.io/invitation/bintik.webp')`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -101,7 +101,8 @@ module.exports = {
                     "background-image": "url('https://azizdhaifullah.github.io/invitation/hero5_.webp')",
                 },
                 ".bg-mempelai": {
-                    "background-image": "url('https://azizdhaifullah.github.io/invitation/heroKereta.webp')",
+                    "background-image": "url('https://azizdhaifullah.github.io/invitation/mempelai.webp')",
+                    // "background-image": "url('/mempelai.webp')",
                 }
             }
             addUtilities(utilities);
