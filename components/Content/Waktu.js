@@ -80,9 +80,7 @@ export default function Waktu() {
                         </a>
                         <br/>
                         <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
-                        <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
-                            Jatibening, Kec.
-                            Pondokgede, Kota Bks, Jawa Barat 17412</p>
+                        <p className={"px-16"}>MW8H+5F6, Pulau Sumatera, Tiga Raja, Kec. Girsang Sipangan Bolon, Kabupaten Simalungun, Sumatera Utara 21174</p>
                     </div>
                     <div className={"md:w-1/12"}>
                     </div>
@@ -93,9 +91,7 @@ export default function Waktu() {
                         <p className={"font-bold"}>08:00 - Selesai</p>
                         <br/>
                         <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
-                        <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
-                            Jatibening, Kec.
-                            Pondokgede, Kota Bks, Jawa Barat 17412</p>
+                        <p className={"px-16"}>MW8H+5F6, Pulau Sumatera, Tiga Raja, Kec. Girsang Sipangan Bolon, Kabupaten Simalungun, Sumatera Utara 21174</p>
                     </div>
                 </div>
                 <Timer/>
@@ -171,9 +167,9 @@ export default function Waktu() {
                                     <div className="relative p-6 w-full">
                                         <div className={"text-center md:flex md:justify-center items-center"}>
                                             <div className={"mb-10 md:mb-0 md:mr-3 mr-0"}>
-                                                <h3>1242725876 - BNI
+                                                <h3>003997541743 - BCA Digital
                                                     <br/>
-                                                    An Rifki Okta Pratama </h3>
+                                                    An Aziz Dhaifullah </h3>
                                                 <button
                                                     className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
@@ -203,7 +199,7 @@ export default function Waktu() {
                                             <div className={"mb-10 md:mb-0 md:mr-3 mr-0"}>
                                                 <h3>7510870438 - BCA
                                                     <br/>
-                                                    An Novia Trie Rizkiyanti </h3>
+                                                    An Icha Utami </h3>
                                                 <button
                                                     className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
@@ -229,39 +225,6 @@ export default function Waktu() {
                                                     </>
                                                     : null}
                                             </div>
-                                            <div>
-                                                <h3><span
-                                                    className={"font-bold"}>Kediaman mempelai wanita : <br/></span>Jl.
-                                                    Caman Raya Gg. H. Moh. Ali <br/>(Belakang Kopi bob) <br/>No.1 RT
-                                                    07/03, Jatibening.</h3>
-                                                <button
-                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-5 md:mb-0"
-                                                    onClick={() => {
-                                                        copyText('alamat')
-                                                    }}
-                                                >
-                                                    <p className={"flex"}>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
-                                                             viewBox="0 0 20 20" fill="currentColor">
-                                                            <path
-                                                                d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
-                                                            <path
-                                                                d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
-                                                        </svg>
-                                                        &nbsp;
-                                                        Copy Address
-                                                    </p>
-                                                </button>
-                                                {copied.alamat ?
-                                                    <>
-                                                        <br/><br/>
-                                                        <p className={"italic"}>Copied!</p>
-                                                    </>
-                                                    : null}
-                                            </div>
-                                            <h3><span
-                                                className={"font-bold"}>Setelah transfer, mohon konfirmasi ke nomor dibawah ini : <br/></span>Novi
-                                                : <br/>08997497842 <br/>Rifki : <br/> 089635112452</h3>
                                         </div>
                                     </div>
                                 </div>
