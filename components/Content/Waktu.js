@@ -25,8 +25,8 @@ export default function Waktu() {
     };
 
     const copyText = (e) => {
-        const rekeningRifki = 1242725876
-        const rekeningNovia = 7510870438
+        const rekeningRifki = "003997541743"
+        const rekeningNovia = "7510870438"
         const alamatRumah = "Jl. Caman Raya Gg. H. Moh. Ali (Belakang Kopi bob) No.1 RT 07/03, Jatibening."
         if (e === 'rifki') {
             navigator.clipboard.writeText(rekeningRifki)

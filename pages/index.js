@@ -34,7 +34,7 @@ export default function Home() {
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content="Aziz &amp; Icha" />
                 <meta property="og:description" content="Wedding Invitation" />
-                <meta property="og:url" content="https://www.pernikahannovirifki.my.id/" />
+                <meta property="og:url" content="https://azizdhaifullah.github.io/invitation/" />
                 <meta property="og:site_name" content="Wedding Invitation Aziz & Icha" />
                 <meta property="og:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
                 <meta property="og:image:secure_url" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
