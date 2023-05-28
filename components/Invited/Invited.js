@@ -28,13 +28,13 @@ export default function Invited({
                     <div className={"md:py-10 object-left-top"}>
                         <Image src={Bunga} width={512} height={282}/>
                     </div>
-                    <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-blackContent leading-relaxed font-curs"}>Hello,
+                    <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-abu-150 leading-relaxed font-curs"}>Hello,
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         You're Invited</h1>
                     <br/>
-                    <h1 className={"md:text-2xl text-xl font-medium text-blackContent leading-relaxed"}>- Save the date of our
+                    <h1 className={"md:text-2xl text-xl font-medium text-abu-150 leading-relaxed"}>- Save the date of our
                         wedding. -</h1>
-                    <p className={"text-blackContent"}>Minggu. 4 Juni 2023</p>
+                    <p className={"text-abu-150"}>Minggu. 4 Juni 2023</p>
                     <br/>
                     <input type="text"
                            placeholder="Daftar tamu..."
