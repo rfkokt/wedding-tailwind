@@ -36,8 +36,8 @@ export default function Home() {
                 <meta property="og:description" content="Wedding Invitation" />
                 <meta property="og:url" content="https://azizdhaifullah.github.io/invitation/" />
                 <meta property="og:site_name" content="Wedding Invitation Aziz & Icha" />
-                <meta property="og:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
-                <meta property="og:image:secure_url" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
+                <meta property="og:image" content="https://azizdhaifullah.github.io/invitation/intro.png" />
+                <meta property="og:image:secure_url" content="https://azizdhaifullah.github.io/invitation/intro.png" />
                 <meta property="og:image:width" content="1296" />
                 <meta property="og:image:height" content="864" />
                 <meta property="og:image:alt" content="Icha &#038; Aziz" />
@@ -47,7 +47,7 @@ export default function Home() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Icha &amp; Aziz" />
                 <meta name="twitter:description" content="Wedding Invitation" />
-                <meta name="twitter:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
+                <meta name="twitter:image" content="https://azizdhaifullah.github.io/invitation/intro.png" />
                 <link rel="icon" href="/invitation/favicon.ico"/>
             </Head>
             {invited ?
