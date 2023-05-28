@@ -66,18 +66,6 @@ export default function Waktu() {
                         <p className={"font-bold"}>Sabtu, 03 Juni 2023</p>
                         <p className={"font-bold"}>08:00 - 10:00</p>
                         <p className={"font-bold"}>(Khusus Keluarga)</p>
-                        <a href="https://www.instagram.com/ichautami07/" target={"_blank"} rel="noreferrer">
-                            <button
-                                className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded"
-                            >
-                                <p className={"flex"}>
-                                    <Image src={Instagram} width={25} height={25}/>
-                                    &nbsp;
-                                    Live Instagram
-                                </p>
-                                <p>@ichautami07</p>
-                            </button>
-                        </a>
                         <br/>
                         <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
                         <p className={"px-16"}>MW8H+5F6, Pulau Sumatera, Tiga Raja, Kec. Girsang Sipangan Bolon, Kabupaten Simalungun, Sumatera Utara 21174</p>
