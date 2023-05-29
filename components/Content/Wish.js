@@ -34,7 +34,9 @@ export default function Wish({
         axios.get(`/api/getUcapan`)
             .then(data => {
                 console.log(data.data.data.values)
-                setDoa(data.data.data.values)
+                if(data.data.data.values){
+                    setDoa(data.data.data.values)
+                }
             }).catch(err => {
             console.log('debug', err)
         })
