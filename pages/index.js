@@ -58,7 +58,7 @@ export default function Home() {
                     <Mempelai/>
                     <Waktu/>
                     <ProtokolKesehatan/>
-                    {/* <Wish guest={tamu}/> */}
+                    <Wish guest={tamu}/>
                     <Footer/>
                 </animated.div>
             }

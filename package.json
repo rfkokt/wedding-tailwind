@@ -12,6 +12,7 @@
     "axios": "^0.24.0",
     "cross-env": "^7.0.3",
     "framer-motion": "^4.1.17",
+    "googleapis": "^118.0.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -19,10 +20,13 @@
     "sweetalert2": "^11.1.9"
   },
   "devDependencies": {
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.3.6",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "postcss": "^8.3.8",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^2.2.16",
+    "typescript": "^5.0.4"
   }
 }

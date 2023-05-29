@@ -31,9 +31,10 @@ export default function Wish({
         getData()
     }, [])
     const getData = () => {
-        axios.get(`https://moexpress.herokuapp.com/api/posts`)
+        axios.get(`/api/getUcapan`)
             .then(data => {
-                setDoa(data.data)
+                console.log(data.data.data.values)
+                setDoa(data.data.data.values)
             }).catch(err => {
             console.log('debug', err)
         })
@@ -53,7 +54,8 @@ export default function Wish({
             "doa": valueKirim.doa,
             "hadir": valueKirim.hadir
         }
-        axios.post(`https://moexpress.herokuapp.com/api/posts`, kirim)
+
+        axios.post(`/api/submit`, kirim)
             .then(() => {
                 Swal.fire({
                     imageUrl: `https://cdn-icons-png.flaticon.com/512/3158/3158981.png`,
@@ -177,9 +179,9 @@ export default function Wish({
                             <div className={"lg:w-3/12 w-full lg:ml-10 mb-10 mx-5 ml-4 "}>
                                 <Card
                                     key={index}
-                                    name={item.nama}
-                                    desc={item.doa}
-                                    work={item.hubungan}
+                                    name={item[0]}
+                                    desc={item[1]}
+                                    work={item[2]}
                                 />
                             </div>
                         </>
