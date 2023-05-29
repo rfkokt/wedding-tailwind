@@ -26,7 +26,7 @@ export default function Waktu() {
 
     const copyText = (e) => {
         const rekeningRifki = "003997541743"
-        const rekeningNovia = "7510870438"
+        const rekeningNovia = "8200785275"
         const alamatRumah = "Jl. Caman Raya Gg. H. Moh. Ali (Belakang Kopi bob) No.1 RT 07/03, Jatibening."
         if (e === 'rifki') {
             navigator.clipboard.writeText(rekeningRifki)
@@ -185,7 +185,7 @@ export default function Waktu() {
                                                     : null}
                                             </div>
                                             <div className={"mb-10 md:mb-0 md:mr-3 mr-0"}>
-                                                <h3>7510870438 - BCA
+                                                <h3>8200785275 - BCA
                                                     <br/>
                                                     An Icha Utami </h3>
                                                 <button
