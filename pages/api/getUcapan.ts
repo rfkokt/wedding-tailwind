@@ -48,6 +48,7 @@ export default async function getUcapan(
         })
 
     } catch (e) {
+        console.error(e)
         return res.status(500).send({message: "Something Went Wrong"})
     }
 

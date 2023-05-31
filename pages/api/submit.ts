@@ -52,6 +52,7 @@ export default async function submit(
         })
 
     } catch (e) {
+        console.error(e)
         return res.status(500).send({message: "Something Went Wrong"})
     }
 
