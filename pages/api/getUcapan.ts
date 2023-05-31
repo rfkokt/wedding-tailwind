@@ -13,7 +13,7 @@ export default async function handler(
     res: NextApiResponse
 ) {
     if(req.method !== 'GET') {
-        return res.status(405).send({message: "Only POST Request Allowed"})
+        return res.status(405).send({message: "Only GET Request Allowed"})
     }
 
     const body = req.body as SheetForm
