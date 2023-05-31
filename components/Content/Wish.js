@@ -31,7 +31,7 @@ export default function Wish({
         getData()
     }, [])
     const getData = () => {
-        axios.get(`/api/getUcapan/`)
+        axios.get(`./api/getUcapan/`)
             .then(data => {
                 console.log(data.data.data.values)
                 if(data.data.data.values){
@@ -57,7 +57,7 @@ export default function Wish({
             "hadir": valueKirim.hadir
         }
 
-        axios.post(`/api/submit/`, kirim)
+        axios.post(`./api/submit/`, kirim)
             .then(() => {
                 Swal.fire({
                     imageUrl: `https://cdn-icons-png.flaticon.com/512/3158/3158981.png`,
