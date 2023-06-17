@@ -16,9 +16,13 @@ export default async function getUcapan(
         return res.status(405).send({message: "Only GET Request Allowed"})
     }
 
+    console.log("masuk sini atas getUcapan")
+
     const body = req.body as SheetForm
 
     try {
+        console.log("masuk sini try getUcapan")
+
         const auth =  new google.auth.GoogleAuth({
             credentials: {
                 client_email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -42,6 +46,8 @@ export default async function getUcapan(
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
             range: 'Sheet1!A2:D'
         });
+
+        console.log("masuk sini bawah getUcapan")
 
         return res.status(200).json({
             data: response.data

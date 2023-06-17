@@ -21,12 +21,11 @@ export default function Hero({
                         <Image src={Bunga} width={512} height={282}/>
                     </div>
                     <animated.div style={fade}>
-                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>The
-                            Wedding Of</h1>
+                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>Resepsi</h1>
                         <h1
                             className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-10 mb-10 font-curs"}>Aziz & Icha</h1>
                     </animated.div>
-                    <p className={"text-white"}>Minggu. 4 Juni 2023</p>
+                    <p className={"text-white"}>Sabtu, 5 Agustus 2023</p>
                     {/*<Timer/>*/}
                     <p className={"text-white"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                     <br/>
@@ -43,7 +42,6 @@ export default function Hero({
                     <Image src={MaskTop}/>
                 </div>
             </div>
-            <audio src={"../../assets/pernikahanImpian.mp3"}/>
         </>
     )
 }

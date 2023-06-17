@@ -3,15 +3,12 @@ import MaskBottom from '../../assets/mask_bottom.png'
 import Bunga from "../../assets/flower.png";
 import MaskTop from "../../assets/mask.png";
 import Love from '../../assets/love.png'
-import Thanks from '../../assets/thank-you.png'
 import Card from "./Card";
 import axios from "axios";
 import {useEffect, useState} from "react";
 import Swal from "sweetalert2";
 
-export default function Wish({
-                                 guest
-                             }) {
+export default function Wish({guest}) {
     const [listdoa, setDoa] = useState([])
     const [valueKirim, setValue] = useState({
         "nama": "",

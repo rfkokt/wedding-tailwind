@@ -32,9 +32,8 @@ export default function Invited({
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         You're Invited</h1>
                     <br/>
-                    <h1 className={"md:text-2xl text-xl font-medium text-abu-150 leading-relaxed"}>- Save the date of our
-                        wedding. -</h1>
-                    <p className={"text-abu-150 md:text-4xl"}>Minggu. 4 Juni 2023</p>
+                    <h1 className={"md:text-2xl text-xl font-medium text-abu-150 leading-relaxed"}>- Save the date -</h1>
+                    <p className={"text-abu-150 md:text-4xl"}>Sabtu, 5 Agustus 2023</p>
                     <br/>
                     <input type="text"
                            placeholder="Daftar tamu..."
