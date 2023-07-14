@@ -21,7 +21,7 @@ export default function Hero({
                         <Image src={Bunga} width={512} height={282}/>
                     </div>
                     <animated.div style={fade}>
-                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>Resepsi</h1>
+                        <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>Ngunduh Mantu</h1>
                         <h1
                             className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-10 mb-10 font-curs"}>Aziz & Icha</h1>
                     </animated.div>
