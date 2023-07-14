@@ -8,7 +8,7 @@ type SheetForm = {
     hadir: Boolean
 }
 
-export default async function getUcapan(
+export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
