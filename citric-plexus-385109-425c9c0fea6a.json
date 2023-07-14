@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "citric-plexus-385109",
+  "private_key_id": "425c9c0fea6adf1f62df75ef38bd56c065d4654c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCTv4KcaTP7s8Z8\nCabYuZ/2l3u6hBX6BQ3QqysvdPiJMD5D5lRV46xeoYW0YDGcrLVckWHPOMPj3u1t\nZ9mBW6yo6qpG/gjdEjKkQIPTL9NrtlerjicAsPdWbMWNKK+IY94hkZz8o0z7LKS/\nIdYNNyJeFjlEKaxkbPDibXzwsyPFuDXSSlqGFNHHaxHIKb1WxUIfzQVwH09aRgNs\nfdmt9M3rpVEsxlh3HC3Vv3x55nDD21XZ377PYs3SvsxTTzeoJ76JMV8fUIW20ABh\n0+zTByfv09ukhqeVdAiYmDjL5iimqn6cY9W6GSbad3I6po9zrGH7P41rtu//++pm\nISFGc6iXAgMBAAECggEAD67R4eFm465TAMKTg8i8WpP8zbEMliPoMgChTmHHqeRF\nj7aIuC85Ejhp9VoKmhtZCvDhpXncjTkSEb1mwIznGG0EUxHPBgxS9M1mUMnwUqwh\nxTOLH08pifJ0y8WIUF1tbDnFJKn+12CHQkSIsJFsI/mO7ZXQ1z4bGaXOj8wsHWYF\nb4EzM/C28zKbTq9EPQVgovBcvvQA3nPMd8Bn7sSzDFKKBvz9GmudrsD4OXCX3tQU\njWnhiC+X33fSJpcmjG26xe2+0LlmMv6W4jZiH69DDFsCm4mtIef9n6NcmMorkQ0W\n3CMVuiZjAmEa1xWh1+ksWDzbjkcB49K6gO7lmmGHoQKBgQDOmy0LYzHSfP6KLfeC\njSteROU2uiQt6mk5w6smLP41cIaupvhLxZ8dWKIttLdKxliqs7aFqN11FbRukTgW\n+o7OT2c5GZE+R+2uA3VkZCNNsTN+eBKdODpRByL6E6RWXk+ZJSKQ04m9bj0OsDYk\nc2ANEh8pv8PgEszMpwtHkKGX4QKBgQC3EhH3kLOHdFGcN9On+zQTpZUJhjSLm19W\nzfDMAZfcSMrT/9oUcW4L0eV23gftLHzSXBzJbECjfuDCZC8K6G45c7/HwpQ+fp+3\n0MCqnjNn4krzxr7ncBS7WpbtRojxY5TXZl2g7depuJ70mZCjnda+9BXj+GY9i+YJ\nnF48I+vvdwKBgEk5/pEWq0XrP1xCRoNi/Yf/6y2mc8RCXOE4VKTHNaJDK7kjPMW+\nWVLRY0nHz18VRb/ayko9O6CP/M9jcPnT/GFrCy7VvQDSBY+zchwO0eRrddDRReer\nUh/944u3AnwKGTQyUTn7f8pAFCvskIQC0HxRe/IUIZx9jVDLs9e9j0iBAoGAJURD\nbg8BzNgr6M4ggviLEFjLrwWn2qeFT+laVF0aqdgTmfZiUXkJutQ+juUB3hEJU9U2\ncvZbbizc2hWE0gagsYdTifmdLd+e6c9P+St9MW+KbHeP0xMo1T7KrICITgNEgFix\nRJpGJaGUkhxUqknuNi7/6cleHrdE273+HOX/GF8CgYEAgjy8OxdtaTke1flmqjeG\nYV+YLxb+/Hfjgo4ZYj6xgHdSPh8U/XLSGeWn3K9iSly5BmFK8lBgUPtNiMQR/zI/\nYD2sRI6ScI0AhTFisAFRoxiQJaQijB9cuPrV6Eztng3e/XsnFqH3/6EWJ/Iglrkn\nyXZVX+J8oE6v/VxOn5qimsg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheet@citric-plexus-385109.iam.gserviceaccount.com",
+  "client_id": "116064796819174776292",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40citric-plexus-385109.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

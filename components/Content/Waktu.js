@@ -84,7 +84,7 @@ export default function Waktu() {
                     <div className="shadow-lg text-center md:w-5/12 mb-6 px-3 py-10">
                         <Image src={Ballons} width={100} height={100}/>
                         <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
-                            Resepsi</h1>
+                            Ngunduh Mantu</h1>
                         <p className={"font-bold"}>Sabtu, 05 Agustus 2023</p>
                         <p className={"font-bold"}>08.00 - Selesai</p>
                         <br/>
