@@ -70,23 +70,12 @@ export default function Waktu() {
                     </div>
                     <div className={"md:w-1/12"}>
                     </div>
-                    <div className="shadow-lg text-center md:w-5/12 md:-ml-12 px-3 mb-6 py-10">
-                        <Image src={Wedding} width={100} height={100}/>
-                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h1>
-                        <p className={"font-bold"}>Minggu, 04 Juni 2023</p>
-                        <p className={"font-bold"}>Telah Dilaksanakan</p>
-                        <br/>
-                        <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
-                        <p className={"px-16"}>MW8H+5F6, Pulau Sumatera, Tiga Raja, Kec. Girsang Sipangan Bolon, Kabupaten Simalungun, Sumatera Utara 21174</p>
-                    </div>
-                </div>
-                <div className={"container flex flex-wrap mx-auto pt-5 justify-center"}>
                     <div className="shadow-lg text-center md:w-5/12 mb-6 px-3 py-10">
                         <Image src={Ballons} width={100} height={100}/>
                         <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
                             Ngunduh Mantu</h1>
                         <p className={"font-bold"}>Sabtu, 05 Agustus 2023</p>
-                        <p className={"font-bold"}>08.00 - Selesai</p>
+                        <p className={"font-bold"}>10.00 - 21.00 WIB</p>
                         <br/>
                         <p className={"font-bold"}>Rumah H Agus Mirzal</p>
                         <p className={"px-16"}>Pondok Ungu Permai Blok AN 6 No 15 RT 11 RW 11, Kaliabang Tengah, Bekasi Utara, Kota Bekasi</p>
