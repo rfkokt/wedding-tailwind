@@ -2,12 +2,12 @@ import Image from "next/image";
 import MaskBottom from '../../assets/mask_bottom.png'
 import Bunga from "../../assets/flower.png";
 import Ring from '../../assets/ring.png'
+import Ballons from '../../assets/balloons.png'
 import Wedding from '../../assets/Resepsi.png'
 import Timer from "../Timer";
 import MaskTop from "../../assets/mask.png";
 import {useState} from "react";
 import {useSpring, animated} from "react-spring";
-import Instagram from "../../assets/instagram.png";
 
 export default function Waktu() {
     const [showModal, setShowModal] = useState(false);
@@ -21,12 +21,12 @@ export default function Waktu() {
 
     })
     const showInMapClicked = () => {
-        window.open("https://www.google.com/maps/place/Gedung+Serbaguna+Graha+Cibening,+Jalan+Caman+Raya+No.+89,+Jatibening+II,+Pondok+Gede,+RT.006%2FRW.003,+Jatibening,+Kec.+Pondokgede,+Kota+Bks,+Jawa+Barat+17412/@-6.264685,106.94529,16z/data=!4m2!3m1!1s0x2e698d107ea38e83:0xb701d016f793eb9b?hl=id&gl=ID");
+        window.open("https://goo.gl/maps/w5ug1VdMPPLx6DN87");
     };
 
     const copyText = (e) => {
-        const rekeningRifki = 1242725876
-        const rekeningNovia = 7510870438
+        const rekeningRifki = "003997541743"
+        const rekeningNovia = "001302050534"
         const alamatRumah = "Jl. Caman Raya Gg. H. Moh. Ali (Belakang Kopi bob) No.1 RT 07/03, Jatibening."
         if (e === 'rifki') {
             navigator.clipboard.writeText(rekeningRifki)
@@ -58,44 +58,27 @@ export default function Waktu() {
                 <div className={"container flex flex-wrap mx-auto pt-5"}>
                     <br/>
                     <div className="shadow-lg text-center md:w-5/12 md:ml-20 mb-6 px-3 py-10">
-
                         <Image src={Ring} width={100} height={100}/>
                         <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
                             Akad
                             Nikah</h1>
-                        <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
-                        <p className={"font-bold"}>08:00 - 10:00</p>
-                        <p className={"font-bold"}>(Khusus Keluarga)</p>
-                        <a href="https://www.instagram.com/noviavia19/" target={"_blank"} rel="noreferrer">
-                            <button
-                                className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded"
-                            >
-                                <p className={"flex"}>
-                                    <Image src={Instagram} width={25} height={25}/>
-                                    &nbsp;
-                                    Live Instagram
-                                </p>
-                                <p>@noviavia19</p>
-                            </button>
-                        </a>
+                        <p className={"font-bold"}>Sabtu, 03 Juni 2023</p>
+                        <p className={"font-bold"}>Telah Dilaksanakan</p>
                         <br/>
-                        <p className={"font-bold"}>Gedung Graha Cibening</p>
-                        <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
-                            Jatibening, Kec.
-                            Pondokgede, Kota Bks, Jawa Barat 17412</p>
+                        <p className={"font-bold"}>Balai Harunggaun Bolon Conference Hall</p>
+                        <p className={"px-16"}>MW8H+5F6, Pulau Sumatera, Tiga Raja, Kec. Girsang Sipangan Bolon, Kabupaten Simalungun, Sumatera Utara 21174</p>
                     </div>
                     <div className={"md:w-1/12"}>
                     </div>
-                    <div className="shadow-lg text-center md:w-5/12 md:-ml-12 px-3 mb-6 py-10">
-                        <Image src={Wedding} width={100} height={100}/>
-                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h1>
-                        <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
-                        <p className={"font-bold"}>11:00 - 16:00</p>
+                    <div className="shadow-lg text-center md:w-5/12 mb-6 px-3 py-10">
+                        <Image src={Ballons} width={100} height={100}/>
+                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
+                            Ngunduh Mantu</h1>
+                        <p className={"font-bold"}>Sabtu, 05 Agustus 2023</p>
+                        <p className={"font-bold"}>10.00 - 21.00 WIB</p>
                         <br/>
-                        <p className={"font-bold"}>Gedung Graha Cibening</p>
-                        <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
-                            Jatibening, Kec.
-                            Pondokgede, Kota Bks, Jawa Barat 17412</p>
+                        <p className={"font-bold"}>Rumah H Agus Mirzal</p>
+                        <p className={"px-16"}>Pondok Ungu Permai Blok AN 6 No 15 RT 11 RW 11, Kaliabang Tengah, Bekasi Utara, Kota Bekasi</p>
                     </div>
                 </div>
                 <Timer/>
@@ -170,10 +153,10 @@ export default function Waktu() {
                                     {/*body*/}
                                     <div className="relative p-6 w-full">
                                         <div className={"text-center md:flex md:justify-center items-center"}>
-                                            <div className={"mb-10 md:mb-0 md:mr-3 mr-0"}>
-                                                <h3>1242725876 - BNI
+                                            <div className={"mb-10 md:mb-0 md:mr-20 mr-0"}>
+                                                <h3>003997541743 - BCA Digital
                                                     <br/>
-                                                    An Rifki Okta Pratama </h3>
+                                                    An Aziz Dhaifullah </h3>
                                                 <button
                                                     className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
@@ -201,9 +184,9 @@ export default function Waktu() {
                                                     : null}
                                             </div>
                                             <div className={"mb-10 md:mb-0 md:mr-3 mr-0"}>
-                                                <h3>7510870438 - BCA
+                                                <h3>001302050534 - BCA Digital
                                                     <br/>
-                                                    An Novia Trie Rizkiyanti </h3>
+                                                    An Icha Utami </h3>
                                                 <button
                                                     className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                                                     onClick={() => {
@@ -229,39 +212,6 @@ export default function Waktu() {
                                                     </>
                                                     : null}
                                             </div>
-                                            <div>
-                                                <h3><span
-                                                    className={"font-bold"}>Kediaman mempelai wanita : <br/></span>Jl.
-                                                    Caman Raya Gg. H. Moh. Ali <br/>(Belakang Kopi bob) <br/>No.1 RT
-                                                    07/03, Jatibening.</h3>
-                                                <button
-                                                    className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-5 md:mb-0"
-                                                    onClick={() => {
-                                                        copyText('alamat')
-                                                    }}
-                                                >
-                                                    <p className={"flex"}>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
-                                                             viewBox="0 0 20 20" fill="currentColor">
-                                                            <path
-                                                                d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
-                                                            <path
-                                                                d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
-                                                        </svg>
-                                                        &nbsp;
-                                                        Copy Address
-                                                    </p>
-                                                </button>
-                                                {copied.alamat ?
-                                                    <>
-                                                        <br/><br/>
-                                                        <p className={"italic"}>Copied!</p>
-                                                    </>
-                                                    : null}
-                                            </div>
-                                            <h3><span
-                                                className={"font-bold"}>Setelah transfer, mohon konfirmasi ke nomor dibawah ini : <br/></span>Novi
-                                                : <br/>08997497842 <br/>Rifki : <br/> 089635112452</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -273,9 +223,10 @@ export default function Waktu() {
                 <div className={"mx-auto justify-center flex"}>
                     <iframe
                         className={"md:w-8/12 w-11/12"}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9927355798764!2d106.94310101449379!3d-6.264684595465545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d107ea38e83%3A0xb701d016f793eb9b!2sGedung%20Serbaguna%20Graha%20Cibening!5e0!3m2!1sid!2sid!4v1635829099069!5m2!1sid!2sid"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.91691799132724!2d107.00956597389813!3d-6.1748235621412055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69897e62a7723f%3A0xcb4d89ec42c233e5!2sJl.%20Gotong%20Royong%20No.15%2C%20RT.011%2FRW.011%2C%20Kaliabang%20Tengah%2C%20Kec.%20Bekasi%20Utara%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017125!5e0!3m2!1sid!2sid!4v1686967474736!5m2!1sid!2sid"
                         height="450" style={{border: 0}} allowFullScreen="" loading="lazy"></iframe>
                 </div>
+                
                 <div className={"-mb-2"}>
                     <Image src={MaskTop}/>
                 </div>

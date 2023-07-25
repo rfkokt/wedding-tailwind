@@ -64,9 +64,9 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url(/heronew.webp)`,
+                "invited": `url('https://azizdhaifullah.github.io/invitation/depan.webp')`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url(/footer1.webp)`
+                "footer": `url('https://azizdhaifullah.github.io/invitation/bintik.webp')`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -95,12 +95,14 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function ({
-                             addUtilities
-                         }) {
+        plugin(function ({addUtilities}) {
             const utilities = {
                 ".bg-hero": {
-                    "background-image": "url(/hero5.webp)",
+                    "background-image": "url('https://azizdhaifullah.github.io/invitation/hero5_.webp')",
+                },
+                ".bg-mempelai": {
+                    "background-image": "url('https://azizdhaifullah.github.io/invitation/mempelai.webp')",
+                    // "background-image": "url('/mempelai.webp')",
                 }
             }
             addUtilities(utilities);
