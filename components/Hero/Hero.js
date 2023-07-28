@@ -34,7 +34,6 @@ export default function Hero({
                         <h1 className={"text-3xl font-medium text-black leading-relaxed font-curs capitalize"}>{guest}</h1>
                     </div>
                     <br/>
-                    <p className={"text-white italic pb-10"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>
 
                 </div>
                 {/*</motion.div>*/}
