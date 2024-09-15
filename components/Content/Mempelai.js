@@ -10,7 +10,7 @@ export default function Mempelai() {
 
     return (
         <>
-            <div className={"bg-color-pallete-200 bg-cover bg-bottom"}>
+            <div className={"bg-mempelai bg-cover bg-top"}>
                 <Image src={MaskBottom}/>
                 <div className={"container mx-auto pt-5"}>
                     <div className={"flex justify-center items-center text-center "}>
@@ -30,8 +30,8 @@ export default function Mempelai() {
                     </p>
                     <div className={"flex justify-center items-center content-center"}>
                         <Image src={BungaKiri} width={150} height={150}/>
-                        <h1 className={"md:text-6xl text-center  text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>&nbsp;Groom
-                            & Bride&nbsp;</h1>
+                        <h1 className={"md:text-6xl text-center  text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>
+                            &nbsp;Groom & Bride&nbsp;</h1>
                         <Image src={BungaKanan} width={150} height={150}/>
                     </div>
                     <br/>

@@ -3,15 +3,12 @@ import MaskBottom from '../../assets/mask_bottom.png'
 import Bunga from "../../assets/flower.png";
 import MaskTop from "../../assets/mask.png";
 import Love from '../../assets/love.png'
-import Thanks from '../../assets/thank-you.png'
 import Card from "./Card";
 import axios from "axios";
 import {useEffect, useState} from "react";
 import Swal from "sweetalert2";
 
-export default function Wish({
-                                 guest
-                             }) {
+export default function Wish({guest}) {
     const [listdoa, setDoa] = useState([])
     const [valueKirim, setValue] = useState({
         "nama": "",
@@ -31,9 +28,12 @@ export default function Wish({
         getData()
     }, [])
     const getData = () => {
-        axios.get(`https://moexpress.herokuapp.com/api/posts`)
+        axios.get(`./api/getUcapan/`)
             .then(data => {
-                setDoa(data.data)
+                console.log(data.data.data.values)
+                if(data.data.data.values){
+                    setDoa(data.data.data.values)
+                }
             }).catch(err => {
             console.log('debug', err)
         })
@@ -53,7 +53,8 @@ export default function Wish({
             "doa": valueKirim.doa,
             "hadir": valueKirim.hadir
         }
-        axios.post(`https://moexpress.herokuapp.com/api/posts`, kirim)
+
+        axios.post(`./api/submit/`, kirim)
             .then(() => {
                 Swal.fire({
                     imageUrl: `https://cdn-icons-png.flaticon.com/512/3158/3158981.png`,
@@ -174,12 +175,12 @@ export default function Wish({
                 <div className={"flex flex-wrap justify-center mb-16 md:mb-0 overflow-auto md:h-128 h-96"}>
                     {listdoa.map((item, index) => (
                         <>
-                            <div className={"lg:w-3/12 w-full lg:ml-10 ml-5 mb-10 mx-5 ml-4 "}>
+                            <div className={"lg:w-3/12 w-full lg:ml-10 mb-10 mx-5 ml-4 "}>
                                 <Card
                                     key={index}
-                                    name={item.nama}
-                                    desc={item.doa}
-                                    work={item.hubungan}
+                                    name={item[0]}
+                                    desc={item[1]}
+                                    work={item[2]}
                                 />
                             </div>
                         </>
