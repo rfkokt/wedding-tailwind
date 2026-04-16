@@ -50,13 +50,13 @@ export default function Invited({
                     <br/>
                     <div>
                         <button
-                            className="bg-color-pallete-400 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded"
+                            className="bg-color-pallete-400 hover:bg-color-pallete-300 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-110 shadow-lg hover:shadow-2xl"
                             onClick={() => {
                                 invited(false)
                             }}
                         >
-                            <p className={"flex"}>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                            <p className={"flex items-center"}>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 animate-pulse mr-2" fill="none"
                                      viewBox="0 0 24 24"
                                      stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}

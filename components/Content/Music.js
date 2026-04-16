@@ -3,23 +3,26 @@ import Image from "next/image";
 import Play from "../../assets/play.png"
 
 const useAudio = url => {
-    const [audio] = useState(new Audio(`https://www.pernikahannovirifki.my.id/musik.mp3`));
+    const [audio] = useState(typeof Audio !== "undefined" ? new Audio(`/musik.mp3`) : null);
     const [playing, setPlaying] = useState(true);
 
     const toggle = () => setPlaying(!playing);
 
     useEffect(() => {
+            if (!audio) return;
             playing ? audio.play() : audio.pause();
         },
-        [playing]
+        [playing, audio]
     );
 
     useEffect(() => {
-        audio.addEventListener('ended', () => setPlaying(false));
+        if (!audio) return;
+        const handleEnded = () => setPlaying(false);
+        audio.addEventListener('ended', handleEnded);
         return () => {
-            audio.removeEventListener('ended', () => setPlaying(false));
+            audio.removeEventListener('ended', handleEnded);
         };
-    }, []);
+    }, [audio]);
 
     return [playing, toggle];
 };
@@ -28,45 +31,18 @@ const Music = ({url}) => {
     const [playing, toggle] = useAudio(url);
 
     return (
-        // <div>
-        //     <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
-        // </div>
-        <>
-            <div className="items-end fixed z-50"
+        <div className="fixed bottom-6 right-6 z-50">
+            <button
+                onClick={toggle}
+                className={`bg-white/90 backdrop-blur-md p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center border border-white/50 ${playing ? 'animate-spin-slow' : ''}`}
+                style={{ width: '60px', height: '60px' }}
             >
-                <div className="my-6 ml-2 mx-auto ">
-                    {/*content*/}
-                    <div className="border-0 rounded-full shadow-lg relative flex flex-col bg-white mb-2">
-                        {/*header*/}
-                        <div className="flex items-start justify-between p-2 ">
-                            <button
-                                onClick={toggle}
-                                className="p-1 ml-auto border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                            >
-                                {playing ?
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20"
-                                         fill="currentColor">
-                                        <path fillRule="evenodd"
-                                              d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z"
-                                              clipRule="evenodd"/>
-                                    </svg> :
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20"
-                                         fill="currentColor">
-                                        <path fillRule="evenodd"
-                                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                                              clipRule="evenodd"/>
-                                    </svg>}
-
-                            </button>
-
-                        </div>
-                        {/*body*/}
-                    </div>
-                </div>
-
-            </div>
-            {/*<div className="opacity-25 fixed inset-0 z-40 bg-black"></div>*/}
-        </>
+                {/* Vinyl Record Icon */}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={`text-color-pallete-400 w-8 h-8 ${!playing ? 'opacity-50' : ''}`}>
+                    <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clipRule="evenodd" />
+                </svg>
+            </button>
+        </div>
     );
 };
 

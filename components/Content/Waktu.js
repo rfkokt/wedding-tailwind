@@ -51,27 +51,27 @@ export default function Waktu() {
     return (
         <>
             <div className={"bg-color-white bg-cover bg-bottom"}>
-                <Image src={MaskBottom}/>
+                <Image src={MaskBottom} alt="Mask Bottom"/>
                 <div className={"flex justify-center items-center content-center md:-mt-10"}>
-                    <Image src={Bunga}/>
+                    <Image src={Bunga} alt="Bunga Ornamental"/>
                 </div>
-                <div className={"container flex flex-wrap mx-auto pt-5"}>
+                <div className={"container flex flex-wrap justify-center mx-auto pt-5"}>
                     <br/>
-                    <div className="shadow-lg text-center md:w-5/12 md:ml-20 mb-6 px-3 py-10">
+                    <div className="shadow-xl bg-white/80 backdrop-blur-md border border-white/50 rounded-2xl text-center w-11/12 md:w-5/12 mx-auto md:ml-20 mb-6 px-3 py-10" data-aos="fade-right">
 
-                        <Image src={Ring} width={100} height={100}/>
-                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
+                        <Image src={Ring} width={100} height={100} alt="Cincin Akad"/>
+                        <h2 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>
                             Akad
-                            Nikah</h1>
+                            Nikah</h2>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
                         <p className={"font-bold"}>08:00 - 10:00</p>
                         <p className={"font-bold"}>(Khusus Keluarga)</p>
                         <a href="https://www.instagram.com/noviavia19/" target={"_blank"} rel="noreferrer">
                             <button
-                                className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded"
+                                className="hover:bg-color-pallete-600 text-black font-bold py-2 px-4 rounded transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                             >
-                                <p className={"flex"}>
-                                    <Image src={Instagram} width={25} height={25}/>
+                                <p className={"flex justify-center items-center"}>
+                                    <Image src={Instagram} width={25} height={25} alt="Instagram"/>
                                     &nbsp;
                                     Live Instagram
                                 </p>
@@ -80,26 +80,28 @@ export default function Waktu() {
                         </a>
                         <br/>
                         <p className={"font-bold"}>Gedung Graha Cibening</p>
-                        <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
+                        <p className={"px-4 md:px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
                             Jatibening, Kec.
                             Pondokgede, Kota Bks, Jawa Barat 17412</p>
                     </div>
-                    <div className={"md:w-1/12"}>
+                    <div className={"hidden md:block md:w-1/12"}>
                     </div>
-                    <div className="shadow-lg text-center md:w-5/12 md:-ml-12 px-3 mb-6 py-10">
-                        <Image src={Wedding} width={100} height={100}/>
-                        <h1 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h1>
+                    <div className="shadow-xl bg-white/80 backdrop-blur-md border border-white/50 rounded-2xl text-center w-11/12 md:w-5/12 mx-auto md:-ml-12 px-3 mb-6 py-10" data-aos="fade-left" data-aos-delay="200">
+                        <Image src={Wedding} width={100} height={100} alt="Gedung Resepsi"/>
+                        <h2 className={"md:text-6xl capitalize text-5xl md:mb-0 font-medium leading-relaxed font-curs"}>Resepsi</h2>
                         <p className={"font-bold"}>Minggu, 05 Desember 2021</p>
                         <p className={"font-bold"}>11:00 - 16:00</p>
                         <br/>
                         <p className={"font-bold"}>Gedung Graha Cibening</p>
-                        <p className={"px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
+                        <p className={"px-4 md:px-16"}>Jalan Caman Raya No. 89, Jatibening II, Pondok Gede, RT.006/RW.003,
                             Jatibening, Kec.
                             Pondokgede, Kota Bks, Jawa Barat 17412</p>
                     </div>
                 </div>
-                <Timer/>
-                <div className={"text-center mb-2"}>
+                <div data-aos="fade-up">
+                    <Timer/>
+                </div>
+                <div className={"text-center mb-2"} data-aos="zoom-in">
                     <button
                         className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
                         onClick={showInMapClicked}
@@ -277,7 +279,7 @@ export default function Waktu() {
                         height="450" style={{border: 0}} allowFullScreen="" loading="lazy"></iframe>
                 </div>
                 <div className={"-mb-2"}>
-                    <Image src={MaskTop}/>
+                    <Image src={MaskTop} alt="Mask Top Component"/>
                 </div>
             </div>
         </>

@@ -11,6 +11,9 @@ module.exports = {
                 mono: ['Great Vibes, cursive;'],
                 curs: ['Birthstone', "cursive"]
             },
+            animation: {
+                'spin-slow': 'spin 4s linear infinite',
+            },
             colors: {
                 "theme-blue": "#5515ef",
                 "theme-pink": "#eb589e",

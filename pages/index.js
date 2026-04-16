@@ -5,7 +5,6 @@ import Invited from "../components/Invited/Invited";
 import Waktu from "../components/Content/Waktu";
 import ProtokolKesehatan from "../components/Content/ProtokolKesehatan";
 import Music from "../components/Content/Music";
-import {useSpring, animated} from "react-spring";
 import Wish from "../components/Content/Wish";
 import Footer from "../components/Content/Footer";
 import Head from "next/head";
@@ -19,10 +18,6 @@ export default function Home() {
     const nameGuest = (e) => {
         setTamu(e)
     }
-    const fade = useSpring({
-        opacity: invited ? 0 : 1,
-        delay: 50
-    })
     return (
         <>
             <Head>
@@ -50,18 +45,19 @@ export default function Home() {
                 <meta name="twitter:image" content="https://i.ibb.co/MCmNrwQ/IMG-20211104-104058.png" />
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            {invited ?
-                <Invited changeInvited={changeInvited} nameGuest={nameGuest}/> :
-                <animated.div style={fade}>
-                    <Music/>
-                    <Hero guest={tamu}/>
-                    <Mempelai/>
-                    <Waktu/>
-                    <ProtokolKesehatan/>
-                    <Wish guest={tamu}/>
-                    <Footer/>
-                </animated.div>
-            }
+            <div className={`fixed inset-0 z-50 transition-transform duration-1000 ease-in-out ${invited ? "translate-y-0" : "-translate-y-full"}`}>
+                <Invited changeInvited={changeInvited} nameGuest={nameGuest}/>
+            </div>
+            
+            <div className={`transition-opacity duration-1000 ease-in-out ${invited ? "opacity-0 h-screen overflow-hidden" : "opacity-100"}`}>
+                <Music/>
+                <Hero guest={tamu}/>
+                <Mempelai/>
+                <Waktu/>
+                <ProtokolKesehatan/>
+                <Wish guest={tamu}/>
+                <Footer/>
+            </div>
         </>
     )
 }
